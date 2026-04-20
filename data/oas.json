@@ -1,0 +1,1380 @@
+{
+  "category": "Outdoor Adventure Skills",
+  "skills": [
+    {
+      "id": "oas-aquatic",
+      "name": "Aquatic Skills",
+      "levels": [
+        {
+          "level": 1,
+          "requirements": [
+            "I know when to use a PFD (Personal Flotation Device).",
+            "I can float for five seconds and glide for five metres on my front and back without assistance.",
+            "I can put my face in the water and blow bubbles.",
+            "I understand the importance of the buddy system, and how it works for swimming and water activities.",
+            "I know how to stay safe while playing around water.",
+            "I can get an object off the bottom in chest-deep water.",
+            "I know three different animals that live in the ocean."
+          ]
+        },
+        {
+          "level": 2,
+          "requirements": [
+            "I can swim with my head in the water.",
+            "I can swim 10 metres (any stroke) without assistance.",
+            "I know how to put on a PFD by myself.",
+            "I know how snorkel gear works.",
+            "I have snorkeled in a pool or open water (such as a lake)."
+          ]
+        },
+        {
+          "level": 3,
+          "requirements": [
+            "I can explain common water safety risks and how to avoid them.",
+            "I can use a snorkel and adjust my mask to fit comfortably.",
+            "I know how to remove a cramp in my leg with a buddy's help.",
+            "I can put on a PFD while in the water and use the HELP and huddle positions.",
+            "I can swim 25 metres in a pool (using any stroke).",
+            "I can recognize the signs of a panicked snorkeler or diver and know how to call for help."
+          ]
+        },
+        {
+          "level": 4,
+          "requirements": [
+            "I have achieved Aquaquest Stage 6, YMCA Swimmer Level, Red Cross Swim Kids Stage 5, or I can demonstrate equivalent skills.",
+            "I can free dive with snorkel and mask to 1.5 metres and fetch an item from the bottom, and clear my snorkel upon surfacing—without lifting my head out of the water.",
+            "I can explain the hazards of shallow water blackout.",
+            "I know what gear is necessary for a water-based snorkel adventure, including protective clothing, masks and sunscreen.",
+            "I know how to select a safe place to snorkel.",
+            "I have snorkeled in open water and observed at least one marine creature.",
+            "I know why ear equalization is necessary when snorkelling or diving at depth."
+          ]
+        },
+        {
+          "level": 5,
+          "requirements": [
+            "I have tried an introductory Scuba experience in a pool (Bubblemaker/SEAL Team/Discover Scuba Diving).",
+            "I can identify five species in my local aquatic environment (either on the surface or underwater), including hazardous species.",
+            "I can achieve the \"Swim to Survive\" standard."
+          ]
+        },
+        {
+          "level": 6,
+          "requirements": [
+            "I have completed at least Emergency First Aid, or an equivalent course.",
+            "I have completed the Open Water Diver Certification.",
+            "I have gone for two additional dives after the Open Water Diver Certification dive.",
+            "I have talked with a younger Section about my diving experience.",
+            "I have assisted with Scouts (who are at Stage 3 or 4) learning to snorkel in open water."
+          ]
+        },
+        {
+          "level": 7,
+          "requirements": [
+            "I have logged at least five open water dives and assisted in the planning.",
+            "I can navigate with a compass underwater and understand the specific challenges of underwater navigation (currents, lack of landmarks, etc.).",
+            "I have participated in a marine environmental service project, cleaning up a body of water.",
+            "I have two of the following experiences: shoot an underwater photo or video; found or placed an underwater geocache; used a dry suit; performed basic gear repairs; taken part in a non-penetration wreck dive or specialty dive course; or helped a younger Scout at Stage 4 or 5."
+          ]
+        },
+        {
+          "level": 8,
+          "requirements": [
+            "I have completed an Advanced Open Water Certification.",
+            "I have led a less experienced buddy on a dive through a site that is new to the buddy.",
+            "I have drawn a rough map of a dive site.",
+            "I have assisted Scouts with their dives at Stage 5 or 6."
+          ]
+        },
+        {
+          "level": 9,
+          "requirements": [
+            "I have organized a dive trip for a Rover Crew.",
+            "I have completed a Rescue Diver Certification course, or have learned and mastered the curriculum to demonstrate the equivalent skills.",
+            "I have assisted Scouts at Stage 6 or 7 with learning dive navigation or other advanced dive skills.",
+            "I have completed one of the following dives: a \"deep dive\" to more than 80 feet/24.36m; an altitude dive; a dive on nitrox; a DPV dive; or a search-and-recovery dive."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oas-camping",
+      "name": "Camping Skills",
+      "levels": [
+        {
+          "level": 1,
+          "requirements": [
+            "I can collect small sticks for a campfire.",
+            "I can follow directions while at camp.",
+            "I can help pack a bag for camp.",
+            "I can keep my camping gear neat and tidy.",
+            "I can care for my basic personal gear on an overnight camp.",
+            "I can explain the use of the buddy system at camp.",
+            "I can describe the different emergency services in the camp area and how to call them.",
+            "I can set out my sleeping area for a good night's sleep at camp.",
+            "I have spent one night at camp."
+          ]
+        },
+        {
+          "level": 2,
+          "requirements": [
+            "I can explain the importance of following directions at camp.",
+            "I can list what personal gear to bring on an overnight camp.",
+            "I can look after all my personal gear while at camp.",
+            "I can explain what clothing to bring on an overnight camp.",
+            "I can explain how to use Canada's Food Guide at camp and help to plan a nutritious meal.",
+            "I can describe safe food handling and hygiene at camp.",
+            "I can help prepare food for cooking at camp and be safe while cooking at camp.",
+            "I can get help if someone is hurt while at camp.",
+            "I can identify the main parts of a tent.",
+            "I can help pitch a tent at camp.",
+            "I behave safely around fires at camp.",
+            "I can identify and explain the elements of the fire triangle.",
+            "I have spent two nights in a tent at camp."
+          ]
+        },
+        {
+          "level": 3,
+          "requirements": [
+            "I can help others learn about camping.",
+            "I can audit my personal gear for camp.",
+            "I can pack a bag for camp.",
+            "I can help plan a basic balanced meal for camp.",
+            "I can demonstrate how to store food at camp.",
+            "I can assist in cooking a meal at camp.",
+            "I can be safe while cooking at camp.",
+            "I can demonstrate first aid treatment for a minor cut or scratch at camp, and explain how to prevent infection and describe the signs of infections.",
+            "I can get a weather forecast for a camp.",
+            "I can describe how weather can affect our camp.",
+            "I can discuss the seven principles of Leave No Trace.",
+            "I can show how to pitch a tent (with help from others).",
+            "I can make a hot drink on a campfire at camp.",
+            "I can clean up a fire area after camp.",
+            "I have spent seven nights at camp."
+          ]
+        },
+        {
+          "level": 4,
+          "requirements": [
+            "I can demonstrate shared teamwork while at camp.",
+            "I can list the personal gear for a standing camp.",
+            "I can show how to use group gear safely at camp.",
+            "I can show proper use, care and maintenance of group gear during and in between camps.",
+            "I can use basic camp tools safely.",
+            "I can store and cook food safely at camp.",
+            "I can demonstrate how to treat cuts and minor burns, and prevent infection at camp.",
+            "I can explain and demonstrate the seven principles of Leave No Trace while at camp.",
+            "I can find the best place to pitch a tent at camp and explain my reasoning.",
+            "I can assist pitching tent with my team at camp.",
+            "I can demonstrate safe practices around fires and cooking equipment to minimize the risk of burns, scalds and other injuries.",
+            "I have spent 12 nights at camp."
+          ]
+        },
+        {
+          "level": 5,
+          "requirements": [
+            "I have assisted in the organization of two camps for my team or others.",
+            "I can assist in planning a camp program of activities.",
+            "I can show the personal gear needed for an overnight lightweight camp.",
+            "I can explain how the type of camp affects the choice of equipment needed.",
+            "I can use, maintain and store tools safely at camp.",
+            "I can teach another Scout what to pack for a camp.",
+            "I can plan a balanced menu for camp with a team.",
+            "I can demonstrate how to use different cooking methods (with different fuel types) at camp.",
+            "I can prepare for and help prevent heat-, cold- and sun-related injuries at camp.",
+            "I can describe the weather forecast and record the weather for the duration of camp.",
+            "I can demonstrate the appropriate measures for minimizing and dealing with food waste, solid waste and human waste, in keeping with Leave No Trace principles.",
+            "I can pitch a variety of tents and shelters.",
+            "I can demonstrate measures to secure tents for inclement weather.",
+            "I can select a suitable location for a standing or lightweight camp.",
+            "I can show the best layout for a campsite and explain my reasoning.",
+            "I can light, maintain and use a fire to cook a balanced meal at camp.",
+            "I have spent 18 nights at camp."
+          ]
+        },
+        {
+          "level": 6,
+          "requirements": [
+            "I can teach camping skills with my team at camp.",
+            "I can plan and lead a weekend camp.",
+            "I can plan a program of activities for camp.",
+            "I can assist with the organization of transportation to camp.",
+            "I can explain group emergency equipment for a camp.",
+            "I can demonstrate to others how to care for, store and maintain group gear for camp.",
+            "I can prepare a list of personal and group gear required for a standing camp.",
+            "I can help plan a menu and purchase food for a weekend camp.",
+            "I can demonstrate to others how to use a variety of cooking stoves at camp and explain to others when each type is most effective.",
+            "I can teach another youth to prepare a meal to be cooked on a fire or improvised stove.",
+            "I can demonstrate treatment of heat-, cold- and sun-related injuries at camp.",
+            "I demonstrate responsibility for myself at camp.",
+            "I can recognize weather signs and prepare for their impact on camp activities.",
+            "I can travel while following the seven principles of Leave No Trace.",
+            "I can describe how to choose the best tent for a specific camp.",
+            "I can teach how to pitch a tent at camp.",
+            "I can help organize campsite setup and takedown.",
+            "I can help research proposed camping areas and locate services.",
+            "I have spent 24 nights at camp in three different seasons, including a week-long camp, while completing this stage.",
+            "I have spent two consecutive nights lightweight camping while completing this stage."
+          ]
+        },
+        {
+          "level": 7,
+          "requirements": [
+            "I can plan and lead a two-night backcountry camp.",
+            "I can plan activities for at least two different types of camps.",
+            "I can organize required transportation for camp.",
+            "I can help plan and lead a backcountry camp of a minimum of two consecutive nights.",
+            "I can audit group emergency equipment for camp.",
+            "I can teach another youth how to care for, store and maintain group gear needed for camps.",
+            "I can create personal and group gear lists for lightweight camping excursions.",
+            "I can teach the use of various stoves and their effective use to another youth at camp.",
+            "I can help prepare and describe an emergency plan for expected risks and hazards at camp.",
+            "I can take responsibility for myself and my team while at camp.",
+            "I can demonstrate how to plan for and adapt to changing weather patterns at camp.",
+            "I can teach the seven principles of Leave No Trace as they apply to a camp.",
+            "I can teach another youth tent selection by camp type.",
+            "I can organize campsite setup and takedown.",
+            "I have spent 30 nights at camp in all four seasons, including two nights without a Scouter while completing this stage."
+          ]
+        },
+        {
+          "level": 8,
+          "requirements": [
+            "I have mentored someone else who was responsible for planning and leading a camp.",
+            "I can source, compare and organize transportation options for local and foreign locations.",
+            "I can describe an expedition plan and how the needs of participants have been met in its development.",
+            "I can prepare for a specialized expedition.",
+            "I can make recommendations to improve group equipment for various camp types.",
+            "I can determine if specialized training is required for camp activities.",
+            "I can use knowledge of weather patterns to change activities as required at camp.",
+            "I have spent 36 nights on various types of camps."
+          ]
+        },
+        {
+          "level": 9,
+          "requirements": [
+            "I can source amenities and local places of interest for various camp types.",
+            "I can budget, prepare and manage every aspect of a camping expedition.",
+            "I have acted as the outing leader on at least two camping expeditions.",
+            "I can plan and execute camping expeditions in all types of locations and regions, including internationally.",
+            "I am able to source local training required for the specific camp or activity.",
+            "I have spent 42 nights on various types of camps."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oas-emergency",
+      "name": "Emergency Aid Skills",
+      "levels": [
+        {
+          "level": 1,
+          "requirements": [
+            "I have made my own personal first aid kit.",
+            "I can demonstrate the basic approach to first aid.",
+            "I can treat minor cuts or scrapes.",
+            "I can be responsible for my own health.",
+            "I can be responsible for my own safety.",
+            "I know my address and location in an emergency.",
+            "I know not to play with matches and lighters.",
+            "I know how to spot things in my home that are not safe.",
+            "I know the different emergency services that are available, and how and when to call them and what to say.",
+            "I use the \"buddy system\" when outdoors.",
+            "I can signal for help if needed when outdoors.",
+            "I always tell an adult where I am going.",
+            "I carry a whistle and visible signal covering when I go out in the bush.",
+            "I know to \"hug a tree\" if lost, or to stay in one place if there are no trees.",
+            "I know how to be safe around a campfire.",
+            "I know how to behave around wildlife."
+          ]
+        },
+        {
+          "level": 2,
+          "requirements": [
+            "I have added items to my own personal first aid kit, and I know how and when to use it.",
+            "I can keep myself safe in emergency situations.",
+            "I can care for someone who has a minor burn.",
+            "I have made a home escape plan with my family.",
+            "I know where the list of emergency telephone numbers is located in my home and I know how to call them.",
+            "I know how to stop, drop and roll if my clothes are on fire.",
+            "I can recognize a warning label on a product and know to leave the product alone.",
+            "I can check for dangers at an emergency situation.",
+            "I always follow directions from a Scouter.",
+            "I can direct a responder to a location where help is needed.",
+            "I know the hazards of water sources in my local area.",
+            "I wear my helmet when using my bicycle, skateboard or scooter.",
+            "I can dress myself appropriately for the weather.",
+            "I know some of the wild animals in my area and how to be safe around them.",
+            "I can find a safe place in bad weather."
+          ]
+        },
+        {
+          "level": 3,
+          "requirements": [
+            "I can perform first aid for large wounds.",
+            "I can perform first aid for nosebleeds.",
+            "I can perform first aid for someone who is choking.",
+            "I know the signs and symptoms of shock and how to treat shock.",
+            "I can comfort someone who is ill or injured.",
+            "I can show how to lock, unlock and secure all windows, doors and other entryways into my home.",
+            "I know the dangers of playing on or near train tracks, trestles, crossings and train yards.",
+            "I know the dangers of touching power lines with a stick or ladder; climbing on electrical power poles, towers and substations; and poking electrical outlets.",
+            "I know the dangers of playing around storm sewers, construction sites, garbage dumps, ice-covered water or water areas, dams, vacant buildings, farm machinery, quarries, old wells and unfriendly animals.",
+            "I have made a list of emergency numbers (such as police, fire, ambulance and poison control) and posted it by a telephone in my home.",
+            "I know how to help create an escape plan for a building or activity location in case of fire.",
+            "I know the \"Rules of the Road\" for safe bicycling.",
+            "I can identify some of the hazardous plants in my area, and those I may encounter when travelling in Canada.",
+            "I know some of the international distress signals and when to use them.",
+            "I can treat bee stings and reactions to some local plants (such as stinging nettle)."
+          ]
+        },
+        {
+          "level": 4,
+          "requirements": [
+            "I can place someone into the recovery (safe airway) position.",
+            "I can provide care for someone who is poisoned.",
+            "I know the first aid treatment for dirt in an eye.",
+            "I know what goes into a home first aid kit.",
+            "I can help reduce the risk of fire and burns in the home.",
+            "I can show how to test and care for a smoke alarm.",
+            "I can manage a home emergency situation.",
+            "I know where my local community emergency shelter is located or how to find out where a community emergency shelter is located if one is needed.",
+            "I know what is in our group first aid kit and know how to use the kit.",
+            "I can care for my feet while outdoors.",
+            "I can explain how to prevent and treat heat and cold injuries.",
+            "I know how to treat and report (if appropriate) insect and animal bites."
+          ]
+        },
+        {
+          "level": 5,
+          "requirements": [
+            "I have successfully completed an Emergency First Aid and CPR (Level A) course from a recognized provider.",
+            "I can correctly record everything that has happened at the scene of the accident.",
+            "I know the rules and why they are important for a home pool, community pool or a body of water used for swimming.",
+            "I can demonstrate how to safely use and care for a barbecue.",
+            "I have assisted in providing training to others in aspects of emergency aid.",
+            "I know how to deal with an incident, injury or illness in a remote outdoor location and how to summon help.",
+            "I know how and when to use flares, mirrors, horns and other long-distance signalling devices.",
+            "I know how to build a stretcher from improvised materials.",
+            "I can use a compass or a GPS device to find direction and travel to a desired location."
+          ]
+        },
+        {
+          "level": 6,
+          "requirements": [
+            "I have participated in and successfully completed a Standard First Aid with CPR (Level C) course or a Marine Basic First Aid with CPR (Level C) from a recognized provider.",
+            "I have acted as an emergency response/preparedness resource on at least one Scouting activity.",
+            "I can explain the different classes of fires and how to use different types of fire extinguishers.",
+            "I have met with a member of a community-based emergency response team and discussed his or her role and responsibilities in my community (e.g. search and rescue, police, fire, ambulance or coast guard).",
+            "I can identify common poisonous plants in my area and know how to treat exposure and symptoms.",
+            "I have acted as a member of a first aid team on at least one outdoor activity."
+          ]
+        },
+        {
+          "level": 7,
+          "requirements": [
+            "I have successfully completed an outdoor curriculum first aid course.",
+            "I respond to emergency situations and follow best practices for first aid, as per whatever first aid certification I hold.",
+            "I have prepared and maintain a 72-hour home emergency kit.",
+            "I have filled out Scouts Canada's Outdoor Activity application for at least three Scout group events.",
+            "I have acted as a first aider on at least four occasions during a single-day group outing or two standard weekend camps.",
+            "I have acted as an emergency preparedness and management support for at least one weekend standing camp or two area events.",
+            "I can use a variety of communication devices effectively in an emergency situation. I have participated in a session on correct use of radio communications and protocols (ARES).",
+            "I have met with a member of a community-based search and rescue emergency response team and discussed his or her role and responsibilities in my community.",
+            "I have participated in a wilderness search and rescue operation (training or real).",
+            "I know what specialized equipment is required in my field first aid kit based upon my activities, skill level and certification, and I know how to use and care for the equipment."
+          ]
+        },
+        {
+          "level": 8,
+          "requirements": [
+            "I have successfully completed an advanced first aid course.",
+            "I have successfully completed a non-first aid certification course in an area of my personal interest within emergency aid.",
+            "As part of taking a non-first aid certification course, I can improve my risk management skills.",
+            "I can safely perform basic emergency repairs on an automobile, such as changing a flat tire or jump-starting a car.",
+            "I can start and maintain a consumer emergency generator.",
+            "I have taught a group of people the importance of, and what should be in, a 72-hour home preparedness kit.",
+            "I know and can describe the steps required to triage in a mass casualty incident (MCI).",
+            "I have met with a member of underwater community-based emergency response search team and discussed his or her role and responsibilities in my community.",
+            "I can create a trip plan with detailed risk management strategies for an activity with my group.",
+            "I know what equipment needs to be in a first aid kit for an activity of at least one weekend in length in the wilderness.",
+            "I have been the responsible first aider for an outdoor expedition of at least three nights.",
+            "I can purify water in a safe manner.",
+            "I have built an emergency shelter in the wilderness with minimal equipment, and I have slept in it overnight.",
+            "I can lead a team at least 100m over wilderness terrain in transporting a patient with an injury who cannot walk by his or her own power.",
+            "I know the limitations in a wilderness setting when calling for medical evacuation transport.",
+            "I know what preparations should be made when calling a medical helicopter.",
+            "I can describe and demonstrate proper use of fire extinguishers (or other tools or methods for extinguishing fires)."
+          ]
+        },
+        {
+          "level": 9,
+          "requirements": [
+            "I have successfully completed Instructor training in the area of my personal interest within emergency aid.",
+            "I have used my instructor qualification to teach Scouts or another community group the course's curriculum as permitted by my instructor certificate.",
+            "I can provide immediate treatment and deal with complicated emergency situations.",
+            "I have completed a minimum of 75 hours of volunteer first aid service in addition to those hours already used to complete an earlier stage.",
+            "I have participated in the preparation and implementation of an Emergency Response Plan for an Area event lasting five days or involving at least 400 participants.",
+            "I have provided Emergency Skills mentorship to a Stage 7 or Stage 8 Emergency Skills Scout.",
+            "I have met with a member of community-based emergency air search response team and discussed his or her role and responsibilities in my community.",
+            "I can assemble, display and describe winter and summer survival kits, and explain how to use them.",
+            "I can explain to another group (for example, Wood Badge participants) what to do if you become lost in the wilderness.",
+            "I have participated in a multi-casualty emergency exercise.",
+            "I know the health risks, and possible ways to mitigate the risks, when travelling to a part of the world I have not before visited."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oas-paddling",
+      "name": "Paddling Skills",
+      "levels": [
+        {
+          "level": 1,
+          "requirements": [
+            "I can jump into chest-deep water with my Personal Flotation Device (PFD) on.",
+            "I can blow bubbles in the water for 10 seconds.",
+            "I can explain what a PFD is for.",
+            "I can put on my PFD and know how it should fit.",
+            "I can show where the bow and stern are in a canoe or kayak.",
+            "I can demonstrate the correct way to hold my paddle.",
+            "I have demonstrated how to behave safely in my canoe or kayak.",
+            "I can explain why I should care for my PFD.",
+            "I can explain the risks of cold water.",
+            "I know how to contact the emergency services.",
+            "I can get in and out of my watercraft safely.",
+            "I have taken part in a short paddling adventure of at least one hour."
+          ]
+        },
+        {
+          "level": 2,
+          "requirements": [
+            "I can swim 25 metres with my PFD on.",
+            "I can explain the difference between a PFD and a life jacket.",
+            "Before I launch my watercraft, I can show where I am allowed to go canoeing or kayaking.",
+            "I can explain why I should not drink the water from the lake or river I am paddling on until it has been filtered or treated.",
+            "I can identify the equipment Transport Canada requires me to have in my canoe or kayak.",
+            "I can explain the safety rules for being near water.",
+            "I can list the appropriate action I should take if I capsize in a canoe or kayak.",
+            "I have explained some of the ways that paddling a canoe or kayak can have a negative impact on the environment where I am paddling.",
+            "I can get help if I see somebody in difficulty on the water.",
+            "I am familiar with common whistle signals and when they would be used.",
+            "I have used a throw bag.",
+            "I can identify the parts of my watercraft and my paddle.",
+            "I am familiar with the signs and symptoms of mild hypothermia.",
+            "I have taken part in at least two paddling activities."
+          ]
+        },
+        {
+          "level": 3,
+          "requirements": [
+            "I can swim 100 metres with my PFD on using any stroke.",
+            "I know how to choose a paddle that is the correct size.",
+            "With help from my team or my Scouter, I can paddle my canoe or kayak forward a short way.",
+            "I have capsized a canoe while sitting in it.",
+            "I can get back into my canoe or kayak with help from someone in another watercraft if my watercraft capsizes.",
+            "I know how and where to get the latest weather forecast for the area where I will be paddling.",
+            "I know what the risks are for paddling in different weather conditions.",
+            "I can make a recognized distress signal.",
+            "I can throw a throw bag.",
+            "I have helped a Stage 1 paddler learn to put on his or her PFD.",
+            "I have taken part in two paddling activities."
+          ]
+        },
+        {
+          "level": 4,
+          "requirements": [
+            "I can demonstrate the HELP and huddle positions while in the water wearing a PFD.",
+            "I can explain what clothing should be worn while canoe tripping.",
+            "I can assist in launching and landing a canoe or kayak.",
+            "I can trade places with my paddling partner while on the water.",
+            "I have helped a Stage 2 paddler to explain the basic safety rules for being near water.",
+            "I can explain the seven principles of Leave No Trace.",
+            "I have taken part in a canoe or kayak raft-up and can explain its uses.",
+            "By myself or with a paddling partner, I can paddle a canoe or kayak in a straight line going forward for at least 50 metres.",
+            "I can make my canoe or kayak turn in the direction I want it to turn.",
+            "I can demonstrate basic canoe strokes (forward, reverse, draw, pry, stop, j, sweep).",
+            "I can explain why my watercraft needs a painter and can attach one so that it is secure and readily available when I need it.",
+            "I can describe water and weather conditions that make paddling unsafe and can explain what to do if I encounter them while I am on the water.",
+            "I can explain why canoes and kayaks are important to Canadian aboriginal people and the history of Canada.",
+            "I can identify three methods for helping someone in the water to reach safety, and have demonstrated how to use them.",
+            "I can throw a throw bag so that someone in the water can reach it.",
+            "I have taken part in and logged at least four paddling activities.",
+            "I can explain what a float plan is.",
+            "I have participated in at least one paddling activity of at least eight hours' duration that includes making and eating a meal."
+          ]
+        },
+        {
+          "level": 5,
+          "requirements": [
+            "I have participated in at least two two-day paddling trips.",
+            "I have helped prepare an emergency plan and a float plan with a more experienced paddler for a two-day paddling trip.",
+            "I have participated in creating a menu for an overnight trip.",
+            "I can recognize the symptoms of weather-related injuries and know how to treat them.",
+            "I can demonstrate a self-rescue with my canoe or kayak.",
+            "I can demonstrate how to pack my personal gear so that it will stay dry.",
+            "I have participated in a canoe-over-canoe rescue as both the rescuer and the one being rescued.",
+            "I can light a fire using no more than three matches.",
+            "I have made a personal survival kit.",
+            "I can explain Scouts Canada's guidelines for paddle sports.",
+            "I can assist Stage 3 paddlers to get back into their swamped watercraft.",
+            "I can help paddlers at Stage 1 identify the parts of their paddle and their canoe or kayak.",
+            "I have completed and logged at least six days of backcountry paddling.",
+            "I have attained at least the Paddle Canada Canoe Basic Skills level of paddling certification."
+          ]
+        },
+        {
+          "level": 6,
+          "requirements": [
+            "I can load my canoe with personal and group gear for a multi-day trip.",
+            "I have demonstrated several methods for ensuring that water is safe to drink.",
+            "I have attained at least Paddle Canada Lake Canoe Skills Introduction Tandem certification (or provincial equivalent where applicable; see requirements).",
+            "I can create a gear list for the personal and group gear required on a four-day trip.",
+            "I can explain the features of a good campsite on a waterway.",
+            "I know how to find out the backcountry camping regulations in the area where I will be travelling.",
+            "I can explain how to deal with waste while traveling in the backcountry, including greywater, solid waste, food scraps and human waste.",
+            "I can read and understand a topographical map, and can use it and a compass to tell where I am and where I am going while on a canoe trip.",
+            "I can recognize conditions that may precede bad weather.",
+            "I know the limits of weather conditions that are safe to paddle in.",
+            "I have completed and logged at least eight days of backcountry canoe tripping.",
+            "I have taught at least one paddling skill, one paddling safety element and one paddling knowledge item to paddlers working on Stages 1–4.",
+            "I have explained the seven principles of Leave No Trace to a Stage 4 paddler.",
+            "I have kept a journal of my canoe excursions that includes both details of the trip and my personal reflections.",
+            "With my paddling team, I can plan a healthy menu for our canoe adventure and help prepare the meals we have planned.",
+            "I can explain how I can access emergency assistance while in the backcountry.",
+            "I have completed at least one paddling trip that is four days, 50 km, has a minimum of three different campsites and includes portages."
+          ]
+        },
+        {
+          "level": 7,
+          "requirements": [
+            "I can efficiently and safely carry my canoe and my gear across a portage of at least 700 metres.",
+            "I have attained a minimum of Paddle Canada Lake Canoe Skills Intermediate Tandem level certification.",
+            "I have attained a minimum of Paddle Canada Moving Water Canoe Skills Introduction Tandem certification.",
+            "I always wear an approved paddling helmet when I paddle in rapids.",
+            "I can explain the relative benefits of various types of canoe materials and designs.",
+            "I know how to outfit a canoe for safety and comfort.",
+            "I know how to use basic tripping technology and understand the pros and cons of the devices I use.",
+            "I can show how and why the way I load my canoe will be different for different water conditions.",
+            "I understand the food requirements for canoe trippers and have prepared a nutritious and delicious menu for a multiday canoe trip.",
+            "I can use several different methods for cooking.",
+            "I have taught at least one paddling skill, one safety element and one knowledge item to paddlers working on Stage 4 or Stage 5.",
+            "I have participated in 12 days of canoe tripping at Stage 7 and recorded the information in my trip log.",
+            "I have completed a canoe trip of six days' duration, 100 kilometres in distance. The trip included four or more campsites, and any number of portages or swifts of moving water (Class 1 or Class 2).",
+            "With my team, I have developed a hazard assessment and risk control plan detailing how we will deal with injuries, illness, loss of equipment and other potential emergencies on our trip.",
+            "With my team, I have developed a float plan for my canoe trip.",
+            "I know what items should be in a first aid kit for backcountry travel as per Transport Canada regulations.",
+            "I have attained a minimum of standard first aid training from an accredited agency. Standard wilderness first aid is strongly recommended.",
+            "With my team, I can plan all the details for an overnight canoe trip and have evaluated the trip afterwards to ensure that our planning was complete and appropriate."
+          ]
+        },
+        {
+          "level": 8,
+          "requirements": [
+            "I can plan and carry out a backcountry canoe trip with my team of at least 14 days, 250 km, and a minimum of 11 different camp sites.",
+            "I can inspect a rapid to determine the best lines for running it.",
+            "I can recognize a rapid that is beyond my skill level to run.",
+            "I have attained Paddle Canada Moving Water Canoe Skills Intermediate Tandem certifications.",
+            "I have completed and logged at least 25 days of canoe tripping at Stage 8.",
+            "I have successfully completed a Paddle Canada Waterfront Canoeing Instructor course.",
+            "While on my extended trip, I have been the designated trip leader for at least one day.",
+            "I can rescue a capsized loaded canoe and get the swimmers to safety.",
+            "I can explain the responsibilities of a trip leader.",
+            "I have successfully completed an advanced wilderness first aid course of at least 40 hours duration (80 hours preferred) with a certified accreditation agency (St. John Ambulance, Red Cross or equivalent).",
+            "I have assisted in teaching a paddling course to Stage 5 or Stage 6 paddlers."
+          ]
+        },
+        {
+          "level": 9,
+          "requirements": [
+            "I have completed instructor-level certification in at least one Paddle Canada discipline.",
+            "I have completed and logged at least 25 days of backcountry canoe tripping (which may include time spent leading trips for less experienced paddlers).",
+            "I know and follow the Transport Canada requirements for guided canoe trips.",
+            "I have completed all necessary paperwork for leading a trip, including a float plan, an emergency plan and Scouts Canada requirements.",
+            "I have successfully completed a swift water rescue course.",
+            "I can lead a group of Stage 6 or Stage 7 paddlers on a multi-day excursion.",
+            "I have taught at least two sanctioned Paddle Canada courses to Scouts working at Stage 5–8."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oas-sailing",
+      "name": "Sailing Skills",
+      "levels": [
+        {
+          "level": 1,
+          "requirements": [
+            "I can explain the risks of cold water.",
+            "I can explain what a Personal Flotation Device (PFD) is for.",
+            "I can put on my PFD and know how it should fit.",
+            "I can show how to avoid sunburns.",
+            "I can show how to contact emergency services.",
+            "I can show where the bow and stern are in a sailboat.",
+            "I can jump into chest-deep water wearing my PFD.",
+            "I can blow bubbles in the water for ten seconds.",
+            "I can explain and have demonstrated how to behave safely in my sailboat.",
+            "I have taken part in a short sailing adventure of at least one hour.",
+            "I have participated in a fun physical fitness program designed for sailing."
+          ]
+        },
+        {
+          "level": 2,
+          "requirements": [
+            "I can explain the safety rules for being near water.",
+            "I am familiar with the signs and symptoms of mild hypothermia.",
+            "I can explain how I should care for my PFD.",
+            "I can explain the difference between a PFD and a life jacket.",
+            "I am familiar with the three common whistle signals and when they would be used.",
+            "I can describe five appropriate actions I should take if I capsize a sailboat.",
+            "I can demonstrate how to tie the reef knot, sheet bend and figure-eight.",
+            "I can identify twelve key parts of my sailboat.",
+            "I have used a throw bag.",
+            "I can lift a boat with help from others, rig a sailboat, and practise getting into and out of my boat safely.",
+            "Before I launch my boat, I can show where I am allowed to go sailing.",
+            "I can swim 50 metres wearing my PFD.",
+            "I can sail away from dock, hold the tiller, pull in the mainsheet, ease the sheets, and sail straight for one minute.",
+            "I have taken part in at least two daysails of four hours each or four daysails of two hours each."
+          ]
+        },
+        {
+          "level": 3,
+          "requirements": [
+            "I can get help if I see somebody in difficulty on the water.",
+            "I can explain why I should not drink the water from the lake, river or ocean on which I am sailing.",
+            "I am familiar with common hand signals and know when they are to be used.",
+            "I can identify the equipment Transport Canada requires me to have in my sailboat.",
+            "I can explain what impact I have on the environment while sailing.",
+            "I can identify six types of sailcraft.",
+            "I can identify the signs of dangerous weather and water conditions.",
+            "I can tie the reef knot, sheet bend, figure-eight and bowline used by Scouts when sailing or when camping.",
+            "I can rig my boat and then practise getting into and out of my boat safely.",
+            "I can tack, gybe, sit on gunwale, hike, slow down, speed up, bail the boat and balance the boat.",
+            "I can de-rig a sailboat, dry the sails and store all the parts properly.",
+            "I have taken part in at least three daysails of four hours each, or six daysails of two hours each.",
+            "I know how and where to get the latest weather forecast for the area where I will be sailing.",
+            "While fully clothed and with a properly fitted PFD, I can tread water for five minutes, then swim 100 metres using any stroke."
+          ]
+        },
+        {
+          "level": 4,
+          "requirements": [
+            "I know how to find an appropriate PFD that is the right size and fit for me.",
+            "I am aware that everyone must wear properly fitted PFDs while in a boat.",
+            "I am familiar with the signs and symptoms of severe hypothermia.",
+            "I can describe and demonstrate safety in and on the water.",
+            "I know how to properly secure a towline to my sailboat.",
+            "I know the hazards for sailing in different weather conditions.",
+            "I understand balance in the sailboat, and know how to sail the boat flat.",
+            "I understand how to trim my sail to get the best performance from the sailboat.",
+            "I can tie eight knots that are useful when sailing, canoeing or camping.",
+            "Under the direction of the Skipper, I have sailed my sailboat forward for 200 metres.",
+            "I can demonstrate how to steer a sailboat going upwind or downwind.",
+            "I can demonstrate how to balance my sailboat and can sail the boat flat.",
+            "I have capsized the sailboat and recovered to an upright position.",
+            "I can get back into the sailboat solo, or with help from the Skipper, if my boat capsizes.",
+            "I can help my Skipper to return the sailboat to the dock or to the beach safely.",
+            "I can de-rig a sailboat, dry the sails and store all the parts properly.",
+            "I have taken part in at least four daysails of four hours each, or eight daysails of at least two hours each, on safe, familiar waters.",
+            "I can toss a throw bag so that someone in the water can reach it.",
+            "I can swim and demonstrate the HELP and huddle positions while in the water wearing a PFD.",
+            "I have been introduced to self-help procedures and can explain how to perform the HELP position by myself and the huddle position with others."
+          ]
+        },
+        {
+          "level": 5,
+          "requirements": [
+            "I know when and how to follow the Sail Coach's commands.",
+            "I can identify mild symptoms of hyperthermia.",
+            "I can identify three reaching assists that could be used to help someone in the water to reach safety and have demonstrated how to use one of them.",
+            "I know how to create and use a float plan.",
+            "I can explain why my boat needs a painter.",
+            "I know games youth can play to promote flexibility prior to going sailing.",
+            "I can explain what clothing should be worn while sailing.",
+            "As the Skipper of my sailcraft, I can identify the equipment Transport Canada requires to be on the sailboat and demonstrate its proper use.",
+            "I can describe the basic Transport Canada navigational aids on the water.",
+            "I can explain the rules established to avoid collision.",
+            "I can inspect a rigged sailboat and identify faulty boat parts.",
+            "I can launch a boat from the dock or from the shore.",
+            "I can trade places with my sailing crew while on the water in winds less than 9 knots.",
+            "I have demonstrated steering a sailboat heading upwind, or bearing off and going downwind, depending on wind conditions and direction.",
+            "I can demonstrate a self-rescue with my sailboat.",
+            "I have demonstrated proper Man Over Board (MOB) procedures while on the water.",
+            "I have demonstrated making a sail raft and can explain its uses.",
+            "I can work as part of a team to sail in a straight line going forward for at least 200 metres.",
+            "I can effectively steer the sailboat while sailing flat, identify wind direction while sailing, make the boat turn, and head up or bear off within one boat length of the mark.",
+            "I have demonstrated how to trim the sail while sailing at all points of sail, including adjusting the sails for wind shifts, and adjusting the sails for puffs or lulls.",
+            "I can manoeuvre the sailboat properly while giving the proper commands to my crew.",
+            "I can safely dock or beach a sailboat.",
+            "I can lift the boat from the water to dry storage, de-rig the boat, and store the sails and foils correctly in the boat storage.",
+            "I have participated in one daysail of at least six hours' duration which includes sailing to and landing at a beach, making and eating a meal, and returning safely.",
+            "I have taken part in at least five daysails of six hours each, or ten daysails of three hours each, on safe, familiar waters.",
+            "I have helped a Stage 2 or Stage 3 sailor explain the basic safety rules for being near water."
+          ]
+        },
+        {
+          "level": 6,
+          "requirements": [
+            "I can identify signs of moderate levels of hyperthermia.",
+            "I understand and have taken the appropriate actions to maintain hydration.",
+            "I understand, and can explain, air dynamics on a sail.",
+            "I can evaluate local sailing hazards.",
+            "I have, and can demonstrate, a full understanding of the local Racing Rules.",
+            "I can clearly communicate with my crew to synchronize the helm to sail trim and to boat balance.",
+            "I have demonstrated proper steering techniques including smooth mark rounding, sailing by the lee and match sheeting to the turn.",
+            "I can properly trim the sail of the sailboat and the crew should identify the point and speed nodes for the helm upwind.",
+            "I can manoeuvre the sailboat.",
+            "I have participated in a local club race.",
+            "I have participated in a sailing rescue as both the rescuer and the one being rescued, and I have experienced a simulated capsize to acquire the knowledge to recover the boat properly.",
+            "I can sail a single/double-handed boat to CANSail 3 skills standards.",
+            "I have participated in at least six daysail outings.",
+            "I have maintained a logbook of my training.",
+            "I have assisted the sail coach in delivering one safety element, one knowledge item and one on-the-water skill to sailors working on Stage 2, 3 or 4."
+          ]
+        },
+        {
+          "level": 7,
+          "requirements": [
+            "I can recognize and treat severe hypothermia and hyperthermia.",
+            "I can evaluate geographical and tidal effects of a sailing venue.",
+            "I can describe common seamanship knowledge.",
+            "I can describe common racing strategies.",
+            "I can describe the mechanics of air flow over the sail.",
+            "I can describe how to tune a boat.",
+            "I know and can describe the intent of the current ISAF racing rules 1–7.",
+            "I have demonstrated an understanding of sail rigging.",
+            "I have demonstrated the skills to balance the sailboat while underway on the water.",
+            "I can demonstrate Intermediate sailing skills.",
+            "I have demonstrated the skills to steer the sailboat while underway.",
+            "I have demonstrated the skills to trim the sails while underway.",
+            "I have successfully shown how to manoeuvre while sailing.",
+            "I have demonstrated down-speed opportunities.",
+            "I have demonstrated tactical manoeuvres while racing.",
+            "I have participated in a one- to two-day local regatta.",
+            "I can sail a single/double-handed boat to CANSail 4 standards.",
+            "I have participated in at least seven daysail outings."
+          ]
+        },
+        {
+          "level": 8,
+          "requirements": [
+            "I know the Collision Regulations and proper etiquette for using a marine radio on the water.",
+            "I know how to properly prepare my boat for safe travel.",
+            "I can evaluate geographical and tidal effects of a new sailing venue.",
+            "I know and can describe the current racing rules.",
+            "I have demonstrated how to tune a boat.",
+            "I have demonstrated optimal body position at all times when sailing.",
+            "I have demonstrated tacking/gybe manoeuvres.",
+            "I have demonstrated the skills to fly a spinnaker/kite on the water.",
+            "I can demonstrate the skill to gybe while flying a spinnaker/kite.",
+            "I can demonstrate tactics while racing.",
+            "I have demonstrated racing strategies.",
+            "I can sail a single-handed boat to CANSail 5 skills standards.",
+            "I have participated in at least eight daysail outings.",
+            "I have participated in a regional training camp and a regional regatta.",
+            "I have successfully completed the equivalent requirements for a CANSail 1–2 Fundamental Sailing Instructor course, from Sail Canada or its member provincial association, or internationally recognized equivalent."
+          ]
+        },
+        {
+          "level": 9,
+          "requirements": [
+            "I have prepared the vehicle and/or trailer with the boat that I am responsible for prior to travelling to any events.",
+            "I have used precautionary driving skills while travelling safely to events carrying passengers and/or transporting sailboats.",
+            "I have developed strategic and tactical plans, based on wind, geography, tides and currents, prior to a race.",
+            "I can describe the implications of the I, P, Z and black flags used in racing with full understanding of their intent in accordance with the current CANSail / World Sailing Racing Rules.",
+            "I have the knowledge to effectively evaluate and adjust both standing and running rigging prior to a race with the intent of achieving maximum performance.",
+            "I have a full understanding of air flow over the sails, and can explain the implications of changing laminar flow on sail trim.",
+            "I can demonstrate at least six steering skills.",
+            "I have successfully demonstrated at least two tactical sailing manoeuvres.",
+            "I have demonstrated at least four optimal body positions while sailing on a double-handed boat.",
+            "I have successfully shown at least three manoeuvres on a boat with a trapeze.",
+            "I have prepared for competition.",
+            "I have participated in a provincial regatta where all the skills that I have learned are consolidated into performance in order to excel during the regatta.",
+            "I have successfully completed the equivalent requirements for an Intermediate CANSail 3–4 Sailing Instructor course from Sail Canada or its provincial association, or an internationally recognized equivalent.",
+            "I can sail a double-handed boat to CANSail 5 skills standards including CANsail 5 chute skill sets."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oas-scoutcraft",
+      "name": "Scoutcraft Skills",
+      "levels": [
+        {
+          "level": 1,
+          "requirements": [
+            "I can hang a drying line at camp with a half hitch or other knot.",
+            "I can keep my mess kit clean at camp.",
+            "When outdoors or at camp, I know what is drinkable (safe) and not drinkable (unsafe) water, and to check with a Scouter when I am unsure.",
+            "I know why it is important to stick to trails when outdoors.",
+            "I know three reasons for having a shelter when sleeping outdoors.",
+            "I can name three wildflowers by direct observation in a wild field, bush or forest.",
+            "I can gather dry, burnable wood for a fire.",
+            "I know to tell adults where I am going when outdoors.",
+            "I know how to keep a camp clean."
+          ]
+        },
+        {
+          "level": 2,
+          "requirements": [
+            "I can tie a reef knot, a round turn and two half-hitch knots.",
+            "I can cook a foil-wrapped meal in a fire.",
+            "I know how much water I should carry when on a hike or taking part in an outdoor activity, and I know how to carry the water.",
+            "I know what natural shelter materials or locations are to keep out of the wind, rain, sun and snow, and where these may be found.",
+            "I can identify four trees by direct observation in a wild field, bush or forest.",
+            "I have helped light a fire using only natural fire-starter materials found in the forest, and I know the safety rules for when around a campfire.",
+            "I know why it is important to use a buddy system when traveling in the forest.",
+            "I know the rules for hygiene at camp (for eating and preparing food)."
+          ]
+        },
+        {
+          "level": 3,
+          "requirements": [
+            "I can tie a half hitch, clove hitch and a fisherman's knot.",
+            "I can cook a meal on a camp stove.",
+            "I can use a shovel to build a camp greywater sump pit, and close the pit when finished.",
+            "I have boiled water over a campfire, and know the safety precautions around fires and hot pots.",
+            "I know the first-aid treatment for burns from hot water, grease and food.",
+            "I have used a compass to walk on a bearing.",
+            "I can make a personal shelter out of plastic sheeting and rope.",
+            "I can identify three wild animal tracks.",
+            "I can lay and start a fire with only matches and materials found in the forest.",
+            "I have put together a personal outdoor survival kit.",
+            "I know what makes a comfortable and safe place for a sleeping shelter or site."
+          ]
+        },
+        {
+          "level": 4,
+          "requirements": [
+            "I have completed a Scoutcraft project with my Scout team using at least a square lashing to join two poles at right angles.",
+            "I can tie a figure eight, bowline, trucker's hitch and sheet bend, and whip the end of a rope.",
+            "I can cook over a fire to roast and bake food items.",
+            "I can use a knife safely (opening, closing, passing, cleaning, caring for) and have earned my knife permit.",
+            "I know how to disinfect water for drinking.",
+            "I can establish the four cardinal directions (north, south, east, west) without a magnetic compass or any electronic means.",
+            "I can build a personal sleeping shelter out of snow or any other natural materials.",
+            "I can safely identify three edible wild plants. (Note: Scouters must approve all plants before they are consumed by Scouts.)",
+            "I can quickly (under five minutes) build an emergency warming fire for a group of three persons without using tools (only matches).",
+            "I know what to do if lost and alone outdoors with no constructed shelter available.",
+            "I can set up a tree food hang to protect my food from animals."
+          ]
+        },
+        {
+          "level": 5,
+          "requirements": [
+            "I have built a lean-to shelter and an A-frame sleeping tripod shelter using wood, tied with four lashing knots: square, diagonal, tripod and shear lashings.",
+            "I have cooked with cast-iron cookware (or substitute cookware) by placing cookware in the fire or coals, as well as on top of the fire or coals.",
+            "I know how to use a camp axe and camp folding saw or bow saw safely (opening, closing, passing, cleaning, caring for, sharpening, cutting), and have obtained the appropriate permits for these.",
+            "I have maintained and used a commercial backpacking portable water-treatment device, and know the limitations, advantages and disadvantages of the device.",
+            "I have navigated using a magnetic compass bearing (all off trail) 3 km to a predetermined fixed point in a wilderness area.",
+            "I have built a shelter big enough for three, made of only natural materials found outdoors and rope, and I have slept out in it for at least two nights.",
+            "I have caught, cleaned and cooked a fish over a campfire (check local regulations for species, size and season prohibitions).",
+            "I have laid and lit a teepee fire, pyramid fire, star fire and reflector fire.",
+            "I have built an improvised stretcher out of rope, overnight backpacking camping equipment and natural materials found outdoors.",
+            "I have dehydrated 1000 calories of food and taken it on a camping trip as my trail snack for two days."
+          ]
+        },
+        {
+          "level": 6,
+          "requirements": [
+            "I have built a usable Burma/Monkey bridge.",
+            "I have built and cooked on a personal-sized stove only made out of tin cans, wax, candle wicks and cardboard (a buddy stove).",
+            "Using a knife and axe, I have prepared a 10-person campfire with tinder, kindling and fuel logs gathered from a forest floor. The fire burned for five hours with all wood gathered before the fire was lit.",
+            "I have built a solar still and collected at least one cup of drinking water from the still.",
+            "I have navigated to and found 10 geocache locations.",
+            "I have built and slept two nights in an igloo, quinzhee or trench snow shelter capable of sleeping three persons.",
+            "I have identified 15 bird species in the wild using a written birding record journal.",
+            "I can light a fire using only mechanical means (flint and steel, ferrocerium striker or friction — e.g. bow and drill).",
+            "I know how to send a signal for help (without any electronic means) in four different ways that can be observed by air searchers.",
+            "From wood I have not harvested from a live source, I have carved and used my own hiking staff on a trail hike."
+          ]
+        },
+        {
+          "level": 7,
+          "requirements": [
+            "Using spars (poles) and rope, I have constructed a three-metre-high tower or a bridge over a three-metre span.",
+            "I have taught five knots to younger Scouts.",
+            "I have made a vagabond (tin-can) stove and cooked a personal camp meal on it.",
+            "I can construct a 2:1, 3:1 and 4:1 rope pulley system to raise or move loads or tension lines.",
+            "I have made newspaper fire logs and bricks, sufficient to have a three-hour warming fire indoors in a stove or fireplace, or outside with a campfire.",
+            "I can identify the poisonous living organisms, animals and plants in Canada.",
+            "I have made and used a solar snow-melt reflector or absorber to melt enough snow to generate two litres of drinking water.",
+            "Using a topographic map and magnetic compass, I have taught younger Scouts to determine their location on a map and to make their way to another location on a map.",
+            "I have led a Scout group and participated in five days of trail or tent campsite construction, maintenance or clean-up work.",
+            "I can make a marine rescue Mayday radio call using the required procedures and voice script.",
+            "I have constructed and used an improvised solar shower at camp or on a camping trip."
+          ]
+        },
+        {
+          "level": 8,
+          "requirements": [
+            "I can backsplice, short splice and eye splice a three-strand rope.",
+            "I can cook a complete campout meal using only improvised natural cooking surfaces and devices (cooking only using flat stones, wood planks, cooking hooks, spits, covered pits or trenches).",
+            "I have made cooking and eating spoons and a bowl with carving tools (or a knife) and wood.",
+            "I have given a lesson to Scout youth on obtaining drinkable water in the wilderness all year round.",
+            "I can find the North Star and identify four of the constellations in the northern sky.",
+            "With only materials found in the forest, rope and plastic sheeting, I have built a 10-person campout dining shelter, protected on all sides from the weather.",
+            "I have observed (and photographed as proof) a total of 15 North American mammals, reptiles and amphibians in the wild.",
+            "Using only natural materials, I can light and maintain a fire in falling rain or falling snow conditions.",
+            "I know how to set up and lead a ground search exercise for a missing person using a hasty search and a grid search, all in an area of a minimum of 2 km² in size.",
+            "I have made 4 metres of 3-strand cordage from only natural plant products found outdoors."
+          ]
+        },
+        {
+          "level": 9,
+          "requirements": [
+            "I have built a large temporary pole and lashing (with flag pole) \"gateway\" entrance for a jamboree or campout activity site.",
+            "Using only wood as a heat source, I have built a reflector camp oven and cooked a meal for five persons, including both roasted and baked food preparation.",
+            "I have built and used an improvised potable water filter.",
+            "Using GPS devices, I have set up and facilitated a ten-station outdoor orienteering course activity for Scouts.",
+            "I have planted a minimum of 100 new trees.",
+            "I have built and used a Leave No Trace warming fire for 10 persons for three hours. No markings or signs of a fire were left on the ground once the fire was out and disassembled.",
+            "I have led a team on an evacuation simulation exercise of a victim being carried out on at minimum 3 km of trail using only an improvised stretcher.",
+            "I have run a field camp kitchen for two days or more, for a Cub Scout (or younger) group."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oas-trail",
+      "name": "Trail Skills",
+      "levels": [
+        {
+          "level": 1,
+          "requirements": [
+            "I can help pack a rucksack for a day hike.",
+            "I can dress myself for a day hike.",
+            "I can list what food to bring on a day hike.",
+            "I can follow directions on a day hike.",
+            "I can identify the main parts of a compass.",
+            "I can behave safely while hiking.",
+            "I can be responsible for myself while we are hiking.",
+            "I can explain the buddy system.",
+            "I can recognize the main distress signals.",
+            "I have attended at least two hikes."
+          ]
+        },
+        {
+          "level": 2,
+          "requirements": [
+            "I know what gear to bring for a hike depending on the weather.",
+            "I can show how to take care of all personal gear needed for a day hike.",
+            "I can read a simple map.",
+            "I can use a compass to find basic directions.",
+            "I can obtain a weather forecast.",
+            "I can be a responsible member of my team while we are hiking.",
+            "I can get help if someone is hurt.",
+            "I have attended at least three hikes.",
+            "I can explain why one brings certain foods and drinks on hikes."
+          ]
+        },
+        {
+          "level": 3,
+          "requirements": [
+            "I can pack a rucksack for a day hike.",
+            "I can explain what clothes to bring for a day hike depending on the weather.",
+            "I can follow a route on an orienteering map.",
+            "I can identify the features of a topographical map.",
+            "I can demonstrate the basic use of a GPS unit.",
+            "I can teach another youth how to find directions by using a compass.",
+            "I can explain the effect of weather on hiking activities.",
+            "I can be responsible for myself and aware of my surroundings while hiking.",
+            "I can explain the main principles of Leave No Trace.",
+            "I can treat simple cuts and scratches.",
+            "I know how to avoid becoming lost, and I know what to do if I get lost.",
+            "I have attended at least three hiking activities, one of which involves hiking on hilly trails."
+          ]
+        },
+        {
+          "level": 4,
+          "requirements": [
+            "I can teach another youth what to pack for a day hike.",
+            "I can pack a rucksack for a weekend hike.",
+            "I can show how to care for all my personal hiking equipment needed for a weekend hike.",
+            "I know how to plan for and avoid food allergies in a group hike.",
+            "I can use a map and compass together for navigation.",
+            "I can teach another youth how to follow a route on an orienteering map.",
+            "I can keep a map dry and safe from the elements.",
+            "I can locate a waypoint that has been pre-programmed into a GPS unit.",
+            "I can plan and bring appropriate personal gear to use on a hike based on weather forecasts for the hiking area.",
+            "I can cross various terrains, such as wet or rocky ground.",
+            "I can apply the Leave No Trace principles while hiking.",
+            "I can minimize trail hazards for myself and others as encountered (trip hazards on the trail, minimizing branch whip while moving them out of the way, etc.).",
+            "I can be responsible for younger or less experienced members of my team while we are hiking.",
+            "I can treat simple sprains and blisters.",
+            "I can identify the different emergency services that are available and how and when to call them.",
+            "I can build or find an emergency shelter.",
+            "I have attended three hikes (including an overnight).",
+            "I can lead a leg of a hike.",
+            "I can help plan a day hike."
+          ]
+        },
+        {
+          "level": 5,
+          "requirements": [
+            "I can explain how the weather affects the equipment I bring on a weekend hike.",
+            "I can show what group equipment to bring on a weekend hike and explain why each item is needed.",
+            "I can show how to use group equipment correctly.",
+            "I can select appropriate footwear for various hikes.",
+            "I can demonstrate how to use different types of lightweight stoves to prepare a meal.",
+            "I can keep food and food preparation materials hygienic.",
+            "I can use a map and compass to find my position on the ground.",
+            "I can plot a proposed hiking route on a map and obtain the required compass bearings.",
+            "I can input a given waypoint into a GPS and then find it.",
+            "I can teach another youth the basic use of a GPS unit.",
+            "I can find directions without a compass.",
+            "I can describe the dangers of weather on hikes.",
+            "I can plan effectively and recommend appropriate gear for my group to take based on weather forecasts for the hike area.",
+            "I know when and how to cross a river.",
+            "I can show how and explain when to use the main distress signals.",
+            "I can be an active member of my team while hiking.",
+            "I can recognize and respond to hazards from flora and fauna.",
+            "I have taken part in three hikes (including an overnight).",
+            "I have written a log for at least two of these activities.",
+            "I can help plan an overnight hike.",
+            "I can help choose a suitable hiking destination.",
+            "I can hike on steep trails safely, using appropriate gear as required."
+          ]
+        },
+        {
+          "level": 6,
+          "requirements": [
+            "I can teach another youth what to pack for a weekend hike.",
+            "I can show what group emergency equipment we can carry on a weekend hike, and how to use each item.",
+            "I can teach another youth how to care for, store and maintain the group equipment.",
+            "I can look after my hiking footwear.",
+            "I can select and maintain my pack for various hiking adventures.",
+            "I know how much water to drink and the effects and treatment of dehydration.",
+            "I know how to use different methods to treat water.",
+            "I can avoid hyponatremia by ensuring proper planning for the hike.",
+            "I can obtain coordinates from a point of interest on a topographical map so that it can be inputted into a GPS unit.",
+            "I can demonstrate the limitations of the compass and other navigation tools.",
+            "I can teach another youth how to find his or her position on the ground using a map and compass.",
+            "I can recognize changing weather patterns while hiking.",
+            "I can show different methods for crossing waterways.",
+            "I can teach the principles of Leave No Trace.",
+            "I can recognize unstable or elevated risk areas (e.g. slick trails, icy terrain) and either avoid them or minimize the risk in crossing the area with accepted use of gear and technique.",
+            "I can recognize and treat hypothermia, hyperthermia, sunstroke, dehydration and asthma, or other medical conditions relevant to my team.",
+            "I can be responsible for myself and my team while hiking.",
+            "I can describe the limitations of my team.",
+            "I have taken part in at least six hiking activities, at least one of which was a two-night hike.",
+            "I have written logs for all of these activities.",
+            "I can plan and lead a day hike.",
+            "I can help organize the transportation required for an activity."
+          ]
+        },
+        {
+          "level": 7,
+          "requirements": [
+            "I can pack a rucksack for a hiking expedition of more than two nights.",
+            "I can inspect group emergency equipment for a hiking expedition of more than two nights.",
+            "I can show what group equipment to bring on a hiking expedition of more than two nights and explain why each item is needed.",
+            "I can choose appropriate lightweight hiking equipment.",
+            "I can plan and cook a variety of meals on a hiking expedition of more than two nights.",
+            "I can explain how much food is needed on hiking expeditions of various lengths.",
+            "I can navigate at night or in poor visibility.",
+            "I can use a topographical map to plan a hike in unfamiliar territory.",
+            "I can predict weather changes without the use of weather forecasts.",
+            "I can make changes to my group's outing for safety reasons based on changing weather patterns that can occur during the activity.",
+            "I can teach trail-travel techniques for various trail types.",
+            "I can teach appropriate trail etiquette to other Scouts.",
+            "I can assess risk and be aware of group safety.",
+            "I can plan escape routes.",
+            "I have participated in at least five hikes of various lengths.",
+            "I have taken, planned and led one hike without a Scouter.",
+            "I have taken part in an unaccompanied but supervised two-night hike.",
+            "I have written logs for all of these activities.",
+            "I can plan and lead an overnight hike.",
+            "I can organize the transport required for an activity.",
+            "I can research and find information about the hiking destination.",
+            "I can create a budget for a hiking trip for my group."
+          ]
+        },
+        {
+          "level": 8,
+          "requirements": [
+            "I can teach another youth how to pack for a hiking expedition.",
+            "I can make recommendations to improve group equipment.",
+            "I can navigate accurately and safely over rough terrain in any type of weather, and at night.",
+            "I can teach another youth how to plan a hike in unfamiliar territory using the appropriate tools.",
+            "I can teach how to read weather patterns outdoors without the use of weather forecasts.",
+            "I have completed a Wilderness First Aid course.",
+            "I can follow the procedures in the event of an accident.",
+            "I have taken part in at least six hiking adventures of various lengths, two of which include overnight components.",
+            "I can lead a hiking expedition of several nights.",
+            "I can take responsibility for our group on a hiking adventure.",
+            "I have written logs for all of these activities.",
+            "I can follow Scouts Canada procedures for a hiking trip."
+          ]
+        },
+        {
+          "level": 9,
+          "requirements": [
+            "I know what equipment is required for various hiking expeditions and the correct use and care of this equipment.",
+            "I can be responsible for others in various situations on hiking expeditions longer than two nights.",
+            "I can assess risk and take appropriate action to ensure safety.",
+            "Where possible, I have taken part in and contributed to the planning of an expedition to 3250 m.",
+            "I can practise basic winter hiking skills.",
+            "I have a logbook detailing at least 20 hikes and expeditions that I have undertaken since Stage 7.",
+            "I can create an exciting expedition while catering for everyone's needs.",
+            "I can budget, prepare and manage every aspect of the expedition without input from Scouters."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oas-vertical",
+      "name": "Vertical Skills",
+      "levels": [
+        {
+          "level": 1,
+          "requirements": [
+            "I know the safety rules for climbing on rocks, trees, fences and man-made structures.",
+            "I have been to a jungle-gym playground and know how to play safely and cooperatively with others."
+          ]
+        },
+        {
+          "level": 2,
+          "requirements": [
+            "I have been climbing on an artificial wall or natural rock formation.",
+            "I know the safety rules for being at the top of or the bottom of a cliff face.",
+            "I can properly put on a climbing helmet.",
+            "I can identify and name the parts of a carabiner."
+          ]
+        },
+        {
+          "level": 3,
+          "requirements": [
+            "I have correctly tied a figure-8 follow-through knot.",
+            "I know when and where I should have a climbing helmet on.",
+            "I know the safety rules for climbing or rappelling at an artificial climbing wall.",
+            "I know how to care for, handle and store a climbing rope, harness, helmet and climbing webbing.",
+            "I know the basic Leave No Trace rules for an outdoor climbing site.",
+            "I have completed a climb to the top of an artificial climbing wall.",
+            "I can put on and adjust a climbing harness.",
+            "I know the safety rules for participating on an aerial or ropes challenge course.",
+            "I know the difference between: 1. single-pitch, 2. multi-pitch, 3. top-rope, 4. lead climbing, 5. seconding climbing methods."
+          ]
+        },
+        {
+          "level": 4,
+          "requirements": [
+            "I have tied a climbing rope into my climbing harness.",
+            "I know the main safety rules for climbing or rappelling at an outdoor natural climbing site.",
+            "I know how to perform an equipment safety check of myself, my climbing partner, and anchor and belay systems.",
+            "I know the communication calls and script to follow between a climber and belayer.",
+            "I have coiled a climbing rope (any method).",
+            "I know what makes a safe and unsafe climbing site.",
+            "I can belay using an auto-locking belay device.",
+            "I can name and identify the use of three types of locking carabiners and three types of non-locking carabiners."
+          ]
+        },
+        {
+          "level": 5,
+          "requirements": [
+            "I can tie these knots: water (tape), double fisherman's, Prusik, clove hitch and bowline.",
+            "I can coil a climbing rope using a butterfly and a mountaineer method.",
+            "I can perform a safety inspection of a climbing helmet, harness, rope and carabiners.",
+            "I can belay using a friction (non-moving part) belay device such as a tube or auto-blocking device.",
+            "I have attached a friction (non-moving part) rappel device to a rope and harness and used the device to rappel.",
+            "I can lower a climber on a top rope down to the ground.",
+            "I have constructed and climbed in a \"Swiss seat\" improvised climbing harness made with tubular or tape webbing.",
+            "I know the safety rules for \"bouldering\" climbing.",
+            "I can set and use passive and natural climbing protection to build both top and bottom climbing pitch anchor-point systems.",
+            "I know the climbing-specific principles of Leave No Trace.",
+            "I have set up a 3:1 (or greater) rope pulley system.",
+            "I understand the concepts, principles, physics and consequences of shock loading in climbing."
+          ]
+        },
+        {
+          "level": 6,
+          "requirements": [
+            "I have tied and used a Munter hitch knot (also known as an Italian hitch) as a belay method.",
+            "I have constructed and used an improvised Parisian Baudrier chest harness.",
+            "I can maintain the correct foot, body and hand positioning for rappelling.",
+            "I know the Yosemite Decimal climbing grading system and how to use it.",
+            "I have belayed a rappeller from above a rappel site.",
+            "I have set up climbing-anchor systems using active protection.",
+            "I know how to assess and use in-place climbing bolt anchors and systems.",
+            "I have completed a mock lead climb on an artificial climbing wall.",
+            "I have set up and used a tube, auto-locking, and auto-blocking belay device.",
+            "I know the different types of climbing webbing and slings and their uses.",
+            "I understand the concept, principle, physics and consequences of fall factor in climbing.",
+            "I know how to identify what is an approved rope for climbing and what sizes of rope are available."
+          ]
+        },
+        {
+          "level": 7,
+          "requirements": [
+            "I have completed a climbing route over a 30 degree incline, either on an ice climb, glacier or frozen snow field.",
+            "I have constructed and used a highline (also called Tyrolean Travers or Aerial Runway).",
+            "I have been caving or on a via ferrata.",
+            "I have completed a single pitch mock lead climb on a natural (not constructed) climbing site.",
+            "I have used utility cord and a friction knot (or system) as protection on a rappel.",
+            "I know the difference between a dynamic and static climbing rope, and where and when these rope types are used."
+          ]
+        },
+        {
+          "level": 8,
+          "requirements": [
+            "I have climbed at a natural (not constructed) top rope climbing site where I set up all the anchor and belay systems for the routes I climbed or rappelled on.",
+            "I have seconded on a multi-pitch rock climb of grade 5.7 or higher.",
+            "I have seconded on an ice climb of W3 or higher.",
+            "I have assisted with setting up a top rope climbing site and assisted with managing beginner climbers learning to climb at that site.",
+            "I have assisted with setting up a rappel site with a belay from above, and assisted with managing beginners learning to rappel at that site.",
+            "I have taught younger Scouts to tie these seven knots: follow-through figure-8, double fisherman's, water knot, bowline, Munter hitch, Prusik and clove hitch."
+          ]
+        },
+        {
+          "level": 9,
+          "requirements": [
+            "I have set up a top rope climbing site and managed or instructed beginner climbers learning to climb at that site.",
+            "I have set up a rappel site with a belay from above and managed or instructed beginners learning to rappel at that site.",
+            "I have completed a lead climb on one of the following multi-pitch climbs: rock climb grade 5.7 or above; ice climb grade WI3 or above; mountain alpine climb grade III or above; or caving that requires climbing ropes and harness.",
+            "I have set up and used a Munter mule combination hitch to facilitate the rescue of beginners learning to rappel."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oas-winter",
+      "name": "Winter Skills",
+      "levels": [
+        {
+          "level": 1,
+          "requirements": [
+            "I have built something out of snow.",
+            "I have prepared a good snack for a winter outing.",
+            "I always carry a water bottle when going on a winter outing.",
+            "I can keep my water bottle from freezing on a winter outing.",
+            "I have participated in a winter sports day (Beaveree, Cuboree, winter challenge).",
+            "I know how to dress when I go outside in winter.",
+            "I know to stay dry or change to dry clothes when I am outside in winter.",
+            "I know about the buddy system and why it is used when participating in outdoor activities.",
+            "I know to follow the instructions of the activity leader when at an outdoor event.",
+            "I have hiked at least 1 km in winter.",
+            "I know that I should not touch cold metal with bare skin, especially my lips or tongue."
+          ]
+        },
+        {
+          "level": 2,
+          "requirements": [
+            "I have gone sledding or tobogganing.",
+            "I have packed a proper lunch for a winter outing.",
+            "I have participated in two winter sports days (Beaveree, Cuboree, winter challenge).",
+            "I know how to pack extra clothes for winter outings.",
+            "I know how to keep my feet dry while I am outside in the winter.",
+            "When I come inside, I know how to put away my outdoor clothing so that it will dry quickly.",
+            "I can help less experienced Scouts to get dressed to go outside.",
+            "I have attended one overnight winter camp or sleepover.",
+            "I have completed two winter hikes of at least 1 km.",
+            "I know to avoid ice or open water without an adult present.",
+            "I have made a piece of simple winter gear or clothing (wristlet or neck warmer)."
+          ]
+        },
+        {
+          "level": 3,
+          "requirements": [
+            "I have participated in a winter sport (alpine skiing, cross-country skiing, snowshoeing, snowboarding, skating, hockey, tobogganing, sledding, curling).",
+            "I can light a small fire.",
+            "I have helped plan a menu for a winter camp.",
+            "I have cooked a lunch over an open fire.",
+            "I understand the layering principle when dressing for winter activities and apply it to all activities.",
+            "With a small group, I have built an emergency shelter in winter.",
+            "I know how to find shelter from the wind on a cold day.",
+            "I can pack a day pack for a winter outing.",
+            "I know how to watch my fellow Scouts for signs of exposure to the cold.",
+            "I have spent one night at winter camp in a cabin or heated tent (in addition to requirements for previous stages).",
+            "I can identify the North Star and three other features in the winter night sky.",
+            "I have completed a winter hike of at least 3 km.",
+            "I have made a winter survival kit that I take with me on all winter activities.",
+            "In addition to previous stages, I have made a piece of winter gear or clothing."
+          ]
+        },
+        {
+          "level": 4,
+          "requirements": [
+            "I have participated in a winter sport (different from the sport done in earlier stages).",
+            "I have helped purchase food for a winter outing.",
+            "I have helped cook meals at winter camp.",
+            "I have attended a winter campfire.",
+            "I have put up a tent in winter to sleep in.",
+            "I can properly set up my sleeping area to stay warm through the night at winter camp.",
+            "I have used a toboggan or sled to transport equipment.",
+            "I have taught a winter skill to a less experienced Scout.",
+            "I have spent two consecutive nights at winter camp (in addition to requirements for previous stages).",
+            "I have traveled in snow using snowshoes or nordic skis.",
+            "I have participated in two 3 km hikes.",
+            "I know how to help someone who has fallen through the ice.",
+            "I know how to prevent and treat hypothermia and frostbite.",
+            "I know how to avoid and treat snow blindness."
+          ]
+        },
+        {
+          "level": 5,
+          "requirements": [
+            "I have played an outdoor game in winter at least six Scout meetings.",
+            "I have led my Patrol in planning and purchasing meals for a winter camp.",
+            "I have been chief cook for at least one meal at winter camp.",
+            "I have helped to run a campfire at a winter camp.",
+            "I am able to pack the appropriate clothing and equipment for a two-night winter camp.",
+            "I have built and slept in a temporary winter shelter such as a quinzhee, snow trench or a lean-to.",
+            "I can lay and light a fire in winter conditions for warmth and cooking.",
+            "I can use a liquid fuel stove in winter conditions and understand why it is important not to get fuel on clothing and skin.",
+            "I have helped lead a winter sports day.",
+            "I have slept outside for two nights in winter (in addition to requirements for previous stages).",
+            "I have participated in a winter hike lasting at least six hours and covering at least 6 km.",
+            "I have hiked a minimum of 5 km in winter conditions following compass bearings.",
+            "I know how to avoid, recognize and treat carbon monoxide poisoning (which can occur in winter shelters).",
+            "I have a first aid qualification equivalent to the Scout First Aid badge (St John's or Red Cross Standard First Aid).",
+            "I can execute a ladder rescue, chain assist and reaching assist for someone who has fallen through the ice."
+          ]
+        },
+        {
+          "level": 6,
+          "requirements": [
+            "I have led an outdoor winter game for a younger Section.",
+            "I know how to obtain and keep a supply of safe drinking water for a winter camp.",
+            "I know how to store water overnight so that it will not freeze.",
+            "I have baked bread or a dessert at a winter camp.",
+            "I have taught a less experienced Scout how to dress for winter activities.",
+            "I have taught a less experienced Scout how to build a winter shelter.",
+            "I can do simple repairs on liquid fuel stoves.",
+            "I have led a cooking team for a winter camp.",
+            "I have assisted at a winter sports day in a leadership role.",
+            "I have slept outside for two nights in a lightweight shelter in winter (in addition to requirements for previous stages).",
+            "I have practised a winter evacuation of a simulated casualty."
+          ]
+        },
+        {
+          "level": 7,
+          "requirements": [
+            "I know how to plan and implement a simple but nutritious menu for a mobile winter camp.",
+            "I know how to select an appropriate tent for winter camping.",
+            "I have made a piece of winter camping or winter safety equipment.",
+            "I have participated in a winter mobile expedition of at least three days (two nights).",
+            "I have maintained my first-aid certification."
+          ]
+        },
+        {
+          "level": 8,
+          "requirements": [
+            "I can carry out repairs on gas-fuelled stoves in winter conditions.",
+            "With a team, I have provided leadership for a one- or two-night activity.",
+            "I have participated in a five-day (four-night) mobile winter expedition.",
+            "I understand the risks and am able to implement appropriate safety procedures for camping in heated tents.",
+            "I have wilderness first aid certifications appropriate for the areas in which I am traveling and the activities I am doing."
+          ]
+        },
+        {
+          "level": 9,
+          "requirements": [
+            "I have led a winter campfire.",
+            "I have led a mobile winter expedition of three to five days.",
+            "I have slept outside at least 20 nights (including nights from previous stages) in winter conditions."
+          ]
+        }
+      ]
+    }
+  ]
+}
