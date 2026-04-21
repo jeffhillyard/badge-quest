@@ -3,7 +3,6 @@
 
 const STORAGE_KEY = "badgequest-progress";
 
-// Load saved progress from localStorage
 function loadProgress() {
   try {
     return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
@@ -12,21 +11,17 @@ function loadProgress() {
   }
 }
 
-// Save progress to localStorage
 function saveProgress(progress) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
 }
 
-// Build a unique key for each requirement
 function reqKey(skillId, level, index) {
   return `${skillId}-l${level}-${index}`;
 }
 
-// Render the overall stats bar at the top
 function renderStats(progress, totalReqs) {
   const done = Object.values(progress).filter(Boolean).length;
   const pct = totalReqs > 0 ? Math.round((done / totalReqs) * 100) : 0;
-
   const statsEl = document.getElementById("bq-stats");
   if (!statsEl) return;
   statsEl.innerHTML = `
@@ -45,31 +40,24 @@ function renderStats(progress, totalReqs) {
   `;
 }
 
-// Update the progress bar and label for a single skill card
 function updateSkillProgress(skill, progress) {
   const total = skill.levels.reduce((s, l) => s + l.requirements.length, 0);
   const done = skill.levels.reduce(
     (s, l) =>
-      s +
-      l.requirements.filter((_, i) => progress[reqKey(skill.id, l.level, i)])
-        .length,
+      s + l.requirements.filter((_, i) => progress[reqKey(skill.id, l.level, i)]).length,
     0
   );
-
   const fill = document.getElementById(`pb-${skill.id}`);
   const label = document.getElementById(`pl-${skill.id}`);
   if (fill) fill.style.width = `${total > 0 ? Math.round((done / total) * 100) : 0}%`;
   if (label) label.textContent = `${done} / ${total}`;
 }
 
-// Build and inject the full UI
 function renderApp(data) {
   const main = document.querySelector("main");
   main.innerHTML = "";
-
   const progress = loadProgress();
 
-  // Count total requirements across all skills
   let totalReqs = 0;
   data.skills.forEach((skill) => {
     skill.levels.forEach((level) => {
@@ -77,30 +65,22 @@ function renderApp(data) {
     });
   });
 
-  // --- Stats row ---
   const statsRow = document.createElement("div");
   statsRow.id = "bq-stats";
   statsRow.className = "stats-row";
   main.appendChild(statsRow);
 
-  // --- Section label ---
   const sectionLabel = document.createElement("div");
   sectionLabel.className = "section-pill";
   sectionLabel.textContent = data.category;
   main.appendChild(sectionLabel);
 
-  // --- Skill cards ---
   data.skills.forEach((skill) => {
-    const totalSkillReqs = skill.levels.reduce(
-      (s, l) => s + l.requirements.length,
-      0
-    );
+    const totalSkillReqs = skill.levels.reduce((s, l) => s + l.requirements.length, 0);
 
-    // Card wrapper
     const card = document.createElement("div");
     card.className = "card";
 
-    // Header (clickable to expand/collapse)
     const header = document.createElement("div");
     header.className = "card-header";
     header.setAttribute("role", "button");
@@ -121,7 +101,6 @@ function renderApp(data) {
       </div>
     `;
 
-    // Body (collapsible)
     const body = document.createElement("div");
     body.className = "card-body";
     body.id = `body-${skill.id}`;
@@ -158,14 +137,11 @@ function renderApp(data) {
         row.appendChild(checkbox);
         row.appendChild(text);
 
-        // Toggle on click
         row.addEventListener("click", () => {
           progress[key] = !progress[key];
           saveProgress(progress);
-
           checkbox.classList.toggle("checked", progress[key]);
           text.classList.toggle("done", progress[key]);
-
           updateSkillProgress(skill, progress);
           renderStats(progress, totalReqs);
         });
@@ -176,7 +152,6 @@ function renderApp(data) {
       body.appendChild(levelBlock);
     });
 
-    // Toggle expand/collapse
     header.addEventListener("click", () => {
       const isOpen = body.style.display !== "none";
       body.style.display = isOpen ? "none" : "block";
@@ -189,11 +164,9 @@ function renderApp(data) {
     card.appendChild(body);
     main.appendChild(card);
 
-    // Set initial progress bar state
     updateSkillProgress(skill, progress);
   });
 
-  // --- Reset button ---
   const resetWrap = document.createElement("div");
   resetWrap.className = "reset-wrap";
   const resetBtn = document.createElement("button");
@@ -208,11 +181,9 @@ function renderApp(data) {
   resetWrap.appendChild(resetBtn);
   main.appendChild(resetWrap);
 
-  // Render stats now that cards exist
   renderStats(progress, totalReqs);
 }
 
-// Fetch data and kick everything off
 fetch("data/oas.json")
   .then((response) => {
     if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
