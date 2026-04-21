@@ -1,226 +1,308 @@
-// BadgeQuest — app.js
-// Loads OAS data and renders interactive badge tracker with progress saving
+/* BadgeQuest — styles.css */
 
-const STORAGE_KEY = "badgequest-progress";
-
-// Load saved progress from localStorage
-function loadProgress() {
-  try {
-    return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
-  } catch {
-    return {};
-  }
+/* ── Reset & Base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-// Save progress to localStorage
-function saveProgress(progress) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f5f5f0;
+  color: #1a1a1a;
+  min-height: 100vh;
+  padding-bottom: 3rem;
 }
 
-// Build a unique key for each requirement
-function reqKey(skillId, level, index) {
-  return `${skillId}-l${level}-${index}`;
+/* ── Header ── */
+header {
+  background: #1a1a3e;
+  color: white;
+  padding: 1.25rem 1.5rem;
+  text-align: center;
 }
 
-// Render the overall stats bar at the top
-function renderStats(progress, totalReqs) {
-  const done = Object.values(progress).filter(Boolean).length;
-  const pct = totalReqs > 0 ? Math.round((done / totalReqs) * 100) : 0;
-
-  const statsEl = document.getElementById("bq-stats");
-  if (!statsEl) return;
-  statsEl.innerHTML = `
-    <div class="stat-box">
-      <div class="stat-num">${done}</div>
-      <div class="stat-lbl">Requirements done</div>
-    </div>
-    <div class="stat-box">
-      <div class="stat-num">${totalReqs}</div>
-      <div class="stat-lbl">Total requirements</div>
-    </div>
-    <div class="stat-box">
-      <div class="stat-num">${pct}%</div>
-      <div class="stat-lbl">Overall progress</div>
-    </div>
-  `;
+header h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #f5c842;
 }
 
-// Update the progress bar and label for a single skill card
-function updateSkillProgress(skill, progress) {
-  const total = skill.levels.reduce((s, l) => s + l.requirements.length, 0);
-  const done = skill.levels.reduce(
-    (s, l) =>
-      s +
-      l.requirements.filter((_, i) => progress[reqKey(skill.id, l.level, i)])
-        .length,
-    0
-  );
-
-  const fill = document.getElementById(`pb-${skill.id}`);
-  const label = document.getElementById(`pl-${skill.id}`);
-  if (fill) fill.style.width = `${total > 0 ? Math.round((done / total) * 100) : 0}%`;
-  if (label) label.textContent = `${done} / ${total}`;
+header p {
+  font-size: 0.85rem;
+  color: #a9b4d4;
+  margin-top: 0.25rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
-// Build and inject the full UI
-function renderApp(data) {
-  const main = document.querySelector("main");
-  main.innerHTML = "";
-
-  const progress = loadProgress();
-
-  // Count total requirements across all skills
-  let totalReqs = 0;
-  data.skills.forEach((skill) => {
-    skill.levels.forEach((level) => {
-      totalReqs += level.requirements.length;
-    });
-  });
-
-  // --- Stats row ---
-  const statsRow = document.createElement("div");
-  statsRow.id = "bq-stats";
-  statsRow.className = "stats-row";
-  main.appendChild(statsRow);
-
-  // --- Section label ---
-  const sectionLabel = document.createElement("div");
-  sectionLabel.className = "section-pill";
-  sectionLabel.textContent = data.category;
-  main.appendChild(sectionLabel);
-
-  // --- Skill cards ---
-  data.skills.forEach((skill) => {
-    const totalSkillReqs = skill.levels.reduce(
-      (s, l) => s + l.requirements.length,
-      0
-    );
-
-    // Card wrapper
-    const card = document.createElement("div");
-    card.className = "card";
-
-    // Header (clickable to expand/collapse)
-    const header = document.createElement("div");
-    header.className = "card-header";
-    header.setAttribute("role", "button");
-    header.setAttribute("aria-expanded", "true");
-    header.innerHTML = `
-      <div class="card-title-group">
-        <span class="card-title">${skill.name}</span>
-        <span class="req-count">${totalSkillReqs} requirements</span>
-      </div>
-      <div class="card-meta">
-        <div class="skill-progress-wrap">
-          <div class="skill-progress-bar">
-            <div class="skill-progress-fill" id="pb-${skill.id}" style="width:0%"></div>
-          </div>
-          <span class="skill-progress-label" id="pl-${skill.id}">0 / ${totalSkillReqs}</span>
-        </div>
-        <span class="chevron" id="chev-${skill.id}">▾</span>
-      </div>
-    `;
-
-    // Body (collapsible)
-    const body = document.createElement("div");
-    body.className = "card-body";
-    body.id = `body-${skill.id}`;
-
-    skill.levels.forEach((level) => {
-      const levelBlock = document.createElement("div");
-      levelBlock.className = "level-block";
-
-      const levelLabel = document.createElement("div");
-      levelLabel.className = "level-label";
-      levelLabel.textContent = `Level ${level.level}`;
-      levelBlock.appendChild(levelLabel);
-
-      level.requirements.forEach((req, i) => {
-        const key = reqKey(skill.id, level.level, i);
-        const isChecked = !!progress[key];
-
-        const row = document.createElement("div");
-        row.className = "req-row";
-
-        const checkbox = document.createElement("div");
-        checkbox.className = `checkbox${isChecked ? " checked" : ""}`;
-        checkbox.id = `cb-${key}`;
-        checkbox.innerHTML = `<svg class="checkmark" viewBox="0 0 10 7" aria-hidden="true">
-          <path d="M1 3.5L3.5 6L9 1" fill="none" stroke="white" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>`;
-
-        const text = document.createElement("span");
-        text.className = `req-text${isChecked ? " done" : ""}`;
-        text.id = `rt-${key}`;
-        text.textContent = req;
-
-        row.appendChild(checkbox);
-        row.appendChild(text);
-
-        // Toggle on click
-        row.addEventListener("click", () => {
-          progress[key] = !progress[key];
-          saveProgress(progress);
-
-          checkbox.classList.toggle("checked", progress[key]);
-          text.classList.toggle("done", progress[key]);
-
-          updateSkillProgress(skill, progress);
-          renderStats(progress, totalReqs);
-        });
-
-        levelBlock.appendChild(row);
-      });
-
-      body.appendChild(levelBlock);
-    });
-
-    // Toggle expand/collapse
-    header.addEventListener("click", () => {
-      const isOpen = body.style.display !== "none";
-      body.style.display = isOpen ? "none" : "block";
-      const chevron = document.getElementById(`chev-${skill.id}`);
-      if (chevron) chevron.style.transform = isOpen ? "rotate(-90deg)" : "";
-      header.setAttribute("aria-expanded", String(!isOpen));
-    });
-
-    card.appendChild(header);
-    card.appendChild(body);
-    main.appendChild(card);
-
-    // Set initial progress bar state
-    updateSkillProgress(skill, progress);
-  });
-
-  // --- Reset button ---
-  const resetWrap = document.createElement("div");
-  resetWrap.className = "reset-wrap";
-  const resetBtn = document.createElement("button");
-  resetBtn.className = "reset-btn";
-  resetBtn.textContent = "Reset all progress";
-  resetBtn.addEventListener("click", () => {
-    if (confirm("Reset all progress? This cannot be undone.")) {
-      localStorage.removeItem(STORAGE_KEY);
-      renderApp(data);
-    }
-  });
-  resetWrap.appendChild(resetBtn);
-  main.appendChild(resetWrap);
-
-  // Render stats now that cards exist
-  renderStats(progress, totalReqs);
+/* ── Main layout ── */
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
 }
 
-// Fetch data and kick everything off
-fetch("data/oas.json")
-  .then((response) => {
-    if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
-    return response.json();
-  })
-  .then((data) => renderApp(data))
-  .catch((error) => {
-    console.error("Error loading OAS data:", error);
-    const main = document.querySelector("main");
-    main.innerHTML = `<p class="error-msg">Could not load badge data. Please check that data/oas.json exists.</p>`;
-  });
+/* ── Stats row ── */
+.stats-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.stat-box {
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+  text-align: center;
+  border: 1px solid #e0e0d8;
+}
+
+.stat-num {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a3e;
+}
+
+.stat-lbl {
+  font-size: 0.72rem;
+  color: #888;
+  margin-top: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* ── Section pill ── */
+.section-pill {
+  display: inline-block;
+  background: #ede8ff;
+  color: #3a2fa8;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  letter-spacing: 0.03em;
+}
+
+/* ── Skill card ── */
+.card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e0e0d8;
+  margin-bottom: 0.85rem;
+  overflow: hidden;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  user-select: none;
+  gap: 12px;
+}
+
+.card-header:hover {
+  background: #fafaf8;
+}
+
+.card-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a3e;
+}
+
+.req-count {
+  font-size: 0.72rem;
+  color: #999;
+}
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+/* ── Skill progress bar ── */
+.skill-progress-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.skill-progress-bar {
+  width: 72px;
+  height: 5px;
+  background: #ebebeb;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.skill-progress-fill {
+  height: 5px;
+  background: #4a3ec8;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.skill-progress-label {
+  font-size: 0.72rem;
+  color: #888;
+  min-width: 36px;
+  text-align: right;
+}
+
+/* ── Chevron ── */
+.chevron {
+  font-size: 1.1rem;
+  color: #bbb;
+  transition: transform 0.2s ease;
+  line-height: 1;
+}
+
+/* ── Card body ── */
+.card-body {
+  border-top: 1px solid #f0f0ea;
+}
+
+/* ── Level block ── */
+.level-block {
+  padding: 0.85rem 1.25rem;
+  border-bottom: 1px solid #f0f0ea;
+}
+
+.level-block:last-child {
+  border-bottom: none;
+}
+
+.level-label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  background: #ede8ff;
+  color: #3a2fa8;
+  padding: 2px 10px;
+  border-radius: 20px;
+  margin-bottom: 0.65rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* ── Requirement row ── */
+.req-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.req-row:hover .req-text {
+  color: #1a1a1a;
+}
+
+/* ── Checkbox ── */
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 2px solid #d0d0d0;
+  background: white;
+  flex-shrink: 0;
+  margin-top: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.checkbox.checked {
+  background: #4a3ec8;
+  border-color: #4a3ec8;
+}
+
+.checkmark {
+  width: 11px;
+  height: 8px;
+  display: none;
+}
+
+.checkbox.checked .checkmark {
+  display: block;
+}
+
+/* ── Requirement text ── */
+.req-text {
+  font-size: 0.88rem;
+  color: #444;
+  line-height: 1.55;
+  transition: color 0.15s;
+}
+
+.req-text.done {
+  color: #bbb;
+  text-decoration: line-through;
+}
+
+/* ── Reset button ── */
+.reset-wrap {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.reset-btn {
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-size: 0.82rem;
+  color: #999;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.reset-btn:hover {
+  border-color: #e05555;
+  color: #e05555;
+}
+
+/* ── Error message ── */
+.error-msg {
+  text-align: center;
+  color: #c44;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+/* ── Footer ── */
+footer {
+  background: white;
+  border-top: 1px solid #e8e8e0;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.75rem;
+  color: #aaa;
+  margin-top: 2rem;
+}
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+  header h1 { font-size: 1.3rem; }
+  .stat-num { font-size: 1.2rem; }
+  .skill-progress-bar { width: 50px; }
+  .req-count { display: none; }
+}
