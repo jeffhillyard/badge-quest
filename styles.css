@@ -1,6 +1,5 @@
 /* BadgeQuest — styles.css */
 
-/* ── Reset & Base ── */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -15,7 +14,6 @@ body {
   padding-bottom: 3rem;
 }
 
-/* ── Header ── */
 header {
   background: #1a1a3e;
   color: white;
@@ -38,14 +36,12 @@ header p {
   text-transform: uppercase;
 }
 
-/* ── Main layout ── */
 main {
   max-width: 760px;
   margin: 0 auto;
   padding: 1.5rem 1rem;
 }
 
-/* ── Stats row ── */
 .stats-row {
   display: flex;
   gap: 10px;
@@ -75,7 +71,6 @@ main {
   letter-spacing: 0.04em;
 }
 
-/* ── Section pill ── */
 .section-pill {
   display: inline-block;
   background: #ede8ff;
@@ -88,7 +83,6 @@ main {
   letter-spacing: 0.03em;
 }
 
-/* ── Skill card ── */
 .card {
   background: white;
   border-radius: 12px;
@@ -137,7 +131,6 @@ main {
   flex-shrink: 0;
 }
 
-/* ── Skill progress bar ── */
 .skill-progress-wrap {
   display: flex;
   align-items: center;
@@ -166,7 +159,6 @@ main {
   text-align: right;
 }
 
-/* ── Chevron ── */
 .chevron {
   font-size: 1.1rem;
   color: #bbb;
@@ -174,12 +166,10 @@ main {
   line-height: 1;
 }
 
-/* ── Card body ── */
 .card-body {
   border-top: 1px solid #f0f0ea;
 }
 
-/* ── Level block ── */
 .level-block {
   padding: 0.85rem 1.25rem;
   border-bottom: 1px solid #f0f0ea;
@@ -202,7 +192,6 @@ main {
   text-transform: uppercase;
 }
 
-/* ── Requirement row ── */
 .req-row {
   display: flex;
   align-items: flex-start;
@@ -215,7 +204,6 @@ main {
   color: #1a1a1a;
 }
 
-/* ── Checkbox ── */
 .checkbox {
   width: 20px;
   height: 20px;
@@ -245,7 +233,6 @@ main {
   display: block;
 }
 
-/* ── Requirement text ── */
 .req-text {
   font-size: 0.88rem;
   color: #444;
@@ -258,7 +245,6 @@ main {
   text-decoration: line-through;
 }
 
-/* ── Reset button ── */
 .reset-wrap {
   text-align: center;
   margin-top: 1.5rem;
@@ -280,7 +266,6 @@ main {
   color: #e05555;
 }
 
-/* ── Error message ── */
 .error-msg {
   text-align: center;
   color: #c44;
@@ -288,7 +273,6 @@ main {
   font-size: 0.9rem;
 }
 
-/* ── Footer ── */
 footer {
   background: white;
   border-top: 1px solid #e8e8e0;
@@ -299,7 +283,6 @@ footer {
   margin-top: 2rem;
 }
 
-/* ── Responsive ── */
 @media (max-width: 480px) {
   header h1 { font-size: 1.3rem; }
   .stat-num { font-size: 1.2rem; }
