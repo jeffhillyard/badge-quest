@@ -1,6 +1,6 @@
 # BadgeQuest
 
-**An unofficial, mobile-friendly badge reference for Scouts Canada — Troop Section.**
+**An unofficial, mobile-friendly badge reference for Scouts Canada.**
 
 > BadgeQuest is a tool created by a Scouter to help Scouts quickly explore badge requirements on any device. It is not affiliated with or endorsed by Scouts Canada.
 
@@ -8,9 +8,9 @@
 
 ## Features
 
-- Mobile-first design — works great on phones at meetings and camps
+- Mobile-first design - works great on phones at meetings and camps
 - Browse and search badge requirements by category
-- Fast, lightweight — no app install required
+- Fast, lightweight - no app install required
 - Works in any modern browser
 
 ---
