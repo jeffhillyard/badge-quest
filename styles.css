@@ -147,10 +147,18 @@ main {
   padding: 0.7rem 1.25rem;
   cursor: pointer;
   user-select: none;
+  gap: 10px;
 }
 
 .level-header:hover {
   background: #fafaf8;
+}
+
+.level-header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .level-label {
@@ -162,11 +170,20 @@ main {
   border-radius: 20px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* ── Level completion text ── */
+.level-complete {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #1a7a3e;
 }
 
 .level-chevron {
   font-size: 0.85rem;
   color: #ccc;
+  flex-shrink: 0;
 }
 
 /* ── Level body ── */
@@ -285,4 +302,5 @@ footer {
 @media (max-width: 480px) {
   header h1 { font-size: 1.3rem; }
   .card-desc { font-size: 0.78rem; }
+  .level-complete { font-size: 0.72rem; }
 }
