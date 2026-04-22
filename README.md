@@ -50,5 +50,6 @@ https://badgequest.pages.dev/
 ## Who Made This?
 
 BadgeQuest was made by Scouter Jeff Hillyard, a Scouts Canada Volunteer residing in Mount Pearl, NL. He is a member of the Newfoundland & Labrador Council, is a Colony, Pack and Troop Scouter with 1st Mount Pearl and Group Commissioner for 1st St. John's West.
+
 ---
 *Made with ❤️ by a Scouter, for Scouts.*
