@@ -41,6 +41,18 @@ function updateSkillProgress(skill, progress) {
   if (fill) fill.style.width = `${total > 0 ? Math.round((done / total) * 100) : 0}%`;
 }
 
+// Check if all requirements in a level are complete and update the label
+function updateLevelCompletion(skill, level, progress) {
+  const total = level.requirements.length;
+  const done = level.requirements.filter(
+    (_, i) => progress[reqKey(skill.id, level.level, i)]
+  ).length;
+  const completeEl = document.getElementById(`lcomplete-${skill.id}-${level.level}`);
+  if (completeEl) {
+    completeEl.style.display = done === total ? "inline" : "none";
+  }
+}
+
 function renderApp(data) {
   const main = document.querySelector("main");
   main.innerHTML = "";
@@ -88,13 +100,23 @@ function renderApp(data) {
       const levelBlock = document.createElement("div");
       levelBlock.className = "level-block";
 
-      // Level header — collapsed by default
       const levelHeader = document.createElement("div");
       levelHeader.className = "level-header";
       levelHeader.setAttribute("role", "button");
       levelHeader.setAttribute("aria-expanded", "false");
+
+      const isComplete = level.requirements.every(
+        (_, i) => progress[reqKey(skill.id, level.level, i)]
+      );
+
       levelHeader.innerHTML = `
-        <span class="level-label">Level ${level.level}</span>
+        <div class="level-header-left">
+          <span class="level-label">Level ${level.level}</span>
+          <span class="level-complete" id="lcomplete-${skill.id}-${level.level}"
+            style="display:${isComplete ? "inline" : "none"}">
+            — Complete. Ready to be awarded.
+          </span>
+        </div>
         <span class="level-chevron" id="lchev-${skill.id}-${level.level}">▸</span>
       `;
 
@@ -138,12 +160,12 @@ function renderApp(data) {
           checkbox.classList.toggle("checked", progress[key]);
           text.classList.toggle("done", progress[key]);
           updateSkillProgress(skill, progress);
+          updateLevelCompletion(skill, level, progress);
         });
 
         levelBody.appendChild(row);
       });
 
-      // Toggle level expand/collapse
       levelHeader.addEventListener("click", (e) => {
         e.stopPropagation();
         const isOpen = levelBody.style.display !== "none";
@@ -158,7 +180,6 @@ function renderApp(data) {
       body.appendChild(levelBlock);
     });
 
-    // Toggle skill expand/collapse
     header.addEventListener("click", () => {
       const isOpen = body.style.display !== "none";
       body.style.display = isOpen ? "none" : "block";
