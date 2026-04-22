@@ -1,7 +1,18 @@
 // BadgeQuest — app.js
-// Loads OAS data and renders interactive badge tracker with progress saving
 
 const STORAGE_KEY = "badgequest-progress";
+
+const SKILL_DESCRIPTIONS = {
+  "oas-aquatic": "Build water safety knowledge and swimming skills, from your first splash to advanced scuba diving and underwater navigation in open water.",
+  "oas-camping": "Develop the skills to plan, prepare for, and lead camping experiences in all seasons and environments, from your first overnight to multi-day wilderness expeditions.",
+  "oas-emergency": "Learn to keep yourself and others safe — from basic first aid and home safety to wilderness emergency response and mass casualty management.",
+  "oas-paddling": "Explore Canada's waterways by canoe or kayak, building paddling technique, trip planning, and rescue skills from calm lakes to backcountry rivers.",
+  "oas-sailing": "Learn to sail confidently from your first time on the water through racing, navigation, and earning instructor-level certification on the open water.",
+  "oas-scoutcraft": "Master the traditional outdoor skills of Scouting — knots, fire, shelter, navigation, and wilderness living — from basic camp craft to advanced survival techniques.",
+  "oas-trail": "Build confidence navigating the outdoors on foot, from day hikes to multi-night backcountry expeditions using maps, compasses, and GPS.",
+  "oas-vertical": "Discover the vertical world through climbing and rappelling, progressing from your first wall to leading multi-pitch climbs on natural rock and ice.",
+  "oas-winter": "Embrace the Canadian winter — learn to dress, travel, camp, and thrive in cold and snowy conditions, from your first winter hike to leading multi-day expeditions."
+};
 
 function loadProgress() {
   try {
@@ -19,27 +30,6 @@ function reqKey(skillId, level, index) {
   return `${skillId}-l${level}-${index}`;
 }
 
-function renderStats(progress, totalReqs) {
-  const done = Object.values(progress).filter(Boolean).length;
-  const pct = totalReqs > 0 ? Math.round((done / totalReqs) * 100) : 0;
-  const statsEl = document.getElementById("bq-stats");
-  if (!statsEl) return;
-  statsEl.innerHTML = `
-    <div class="stat-box">
-      <div class="stat-num">${done}</div>
-      <div class="stat-lbl">Requirements done</div>
-    </div>
-    <div class="stat-box">
-      <div class="stat-num">${totalReqs}</div>
-      <div class="stat-lbl">Total requirements</div>
-    </div>
-    <div class="stat-box">
-      <div class="stat-num">${pct}%</div>
-      <div class="stat-lbl">Overall progress</div>
-    </div>
-  `;
-}
-
 function updateSkillProgress(skill, progress) {
   const total = skill.levels.reduce((s, l) => s + l.requirements.length, 0);
   const done = skill.levels.reduce(
@@ -48,9 +38,7 @@ function updateSkillProgress(skill, progress) {
     0
   );
   const fill = document.getElementById(`pb-${skill.id}`);
-  const label = document.getElementById(`pl-${skill.id}`);
   if (fill) fill.style.width = `${total > 0 ? Math.round((done / total) * 100) : 0}%`;
-  if (label) label.textContent = `${done} / ${total}`;
 }
 
 function renderApp(data) {
@@ -58,65 +46,67 @@ function renderApp(data) {
   main.innerHTML = "";
   const progress = loadProgress();
 
-  let totalReqs = 0;
-  data.skills.forEach((skill) => {
-    skill.levels.forEach((level) => {
-      totalReqs += level.requirements.length;
-    });
-  });
-
-  const statsRow = document.createElement("div");
-  statsRow.id = "bq-stats";
-  statsRow.className = "stats-row";
-  main.appendChild(statsRow);
-
+  // Section pill
   const sectionLabel = document.createElement("div");
   sectionLabel.className = "section-pill";
   sectionLabel.textContent = data.category;
   main.appendChild(sectionLabel);
 
   data.skills.forEach((skill) => {
-    const totalSkillReqs = skill.levels.reduce((s, l) => s + l.requirements.length, 0);
 
     const card = document.createElement("div");
     card.className = "card";
 
+    // Header — always visible, description readable without expanding
     const header = document.createElement("div");
     header.className = "card-header";
     header.setAttribute("role", "button");
-    header.setAttribute("aria-expanded", "true");
+    header.setAttribute("aria-expanded", "false");
+
+    const desc = SKILL_DESCRIPTIONS[skill.id] || "";
+
     header.innerHTML = `
       <div class="card-title-group">
-        <span class="card-title">${skill.name}</span>
-        <span class="req-count">${totalSkillReqs} requirements</span>
-      </div>
-      <div class="card-meta">
-        <div class="skill-progress-wrap">
-          <div class="skill-progress-bar">
-            <div class="skill-progress-fill" id="pb-${skill.id}" style="width:0%"></div>
-          </div>
-          <span class="skill-progress-label" id="pl-${skill.id}">0 / ${totalSkillReqs}</span>
+        <div class="card-title-row">
+          <span class="card-title">${skill.name}</span>
+          <span class="chevron" id="chev-${skill.id}">▸</span>
         </div>
-        <span class="chevron" id="chev-${skill.id}">▾</span>
+        <span class="card-desc">${desc}</span>
+        <div class="skill-progress-bar">
+          <div class="skill-progress-fill" id="pb-${skill.id}" style="width:0%"></div>
+        </div>
       </div>
     `;
 
+    // Body — collapsed by default
     const body = document.createElement("div");
     body.className = "card-body";
     body.id = `body-${skill.id}`;
+    body.style.display = "none";
 
     skill.levels.forEach((level) => {
       const levelBlock = document.createElement("div");
       levelBlock.className = "level-block";
 
-      const levelLabel = document.createElement("div");
-      levelLabel.className = "level-label";
-      levelLabel.textContent = `Level ${level.level}`;
-      levelBlock.appendChild(levelLabel);
+      // Level header — collapsed by default
+      const levelHeader = document.createElement("div");
+      levelHeader.className = "level-header";
+      levelHeader.setAttribute("role", "button");
+      levelHeader.setAttribute("aria-expanded", "false");
+      levelHeader.innerHTML = `
+        <span class="level-label">Level ${level.level}</span>
+        <span class="level-chevron" id="lchev-${skill.id}-${level.level}">▸</span>
+      `;
+
+      const levelBody = document.createElement("div");
+      levelBody.className = "level-body";
+      levelBody.id = `lbody-${skill.id}-${level.level}`;
+      levelBody.style.display = "none";
 
       level.requirements.forEach((req, i) => {
         const key = reqKey(skill.id, level.level, i);
         const isChecked = !!progress[key];
+        const reqNum = `${level.level}.${i + 1}`;
 
         const row = document.createElement("div");
         row.className = "req-row";
@@ -129,12 +119,17 @@ function renderApp(data) {
             stroke-linecap="round" stroke-linejoin="round"/>
         </svg>`;
 
+        const numLabel = document.createElement("span");
+        numLabel.className = "req-num";
+        numLabel.textContent = reqNum;
+
         const text = document.createElement("span");
         text.className = `req-text${isChecked ? " done" : ""}`;
         text.id = `rt-${key}`;
         text.textContent = req;
 
         row.appendChild(checkbox);
+        row.appendChild(numLabel);
         row.appendChild(text);
 
         row.addEventListener("click", () => {
@@ -143,20 +138,32 @@ function renderApp(data) {
           checkbox.classList.toggle("checked", progress[key]);
           text.classList.toggle("done", progress[key]);
           updateSkillProgress(skill, progress);
-          renderStats(progress, totalReqs);
         });
 
-        levelBlock.appendChild(row);
+        levelBody.appendChild(row);
       });
 
+      // Toggle level expand/collapse
+      levelHeader.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const isOpen = levelBody.style.display !== "none";
+        levelBody.style.display = isOpen ? "none" : "block";
+        const lchev = document.getElementById(`lchev-${skill.id}-${level.level}`);
+        if (lchev) lchev.textContent = isOpen ? "▸" : "▾";
+        levelHeader.setAttribute("aria-expanded", String(!isOpen));
+      });
+
+      levelBlock.appendChild(levelHeader);
+      levelBlock.appendChild(levelBody);
       body.appendChild(levelBlock);
     });
 
+    // Toggle skill expand/collapse
     header.addEventListener("click", () => {
       const isOpen = body.style.display !== "none";
       body.style.display = isOpen ? "none" : "block";
       const chevron = document.getElementById(`chev-${skill.id}`);
-      if (chevron) chevron.style.transform = isOpen ? "rotate(-90deg)" : "";
+      if (chevron) chevron.textContent = isOpen ? "▸" : "▾";
       header.setAttribute("aria-expanded", String(!isOpen));
     });
 
@@ -167,6 +174,7 @@ function renderApp(data) {
     updateSkillProgress(skill, progress);
   });
 
+  // Reset button
   const resetWrap = document.createElement("div");
   resetWrap.className = "reset-wrap";
   const resetBtn = document.createElement("button");
@@ -180,8 +188,6 @@ function renderApp(data) {
   });
   resetWrap.appendChild(resetBtn);
   main.appendChild(resetWrap);
-
-  renderStats(progress, totalReqs);
 }
 
 fetch("data/oas.json")
