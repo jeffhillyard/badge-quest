@@ -1,0 +1,306 @@
+/* BadgeQuest — styles.css */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f5f5f0;
+  color: #1a1a1a;
+  min-height: 100vh;
+  padding-bottom: 3rem;
+}
+
+/* ── Header ── */
+header {
+  background: #1a1a3e;
+  color: white;
+  padding: 1.25rem 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #f5c842;
+}
+
+header p {
+  font-size: 0.85rem;
+  color: #a9b4d4;
+  margin-top: 0.25rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ── Main layout ── */
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+/* ── Section pill ── */
+.section-pill {
+  display: inline-block;
+  background: #ede8ff;
+  color: #3a2fa8;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  letter-spacing: 0.03em;
+}
+
+/* ── Skill card ── */
+.card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e0e0d8;
+  margin-bottom: 0.85rem;
+  overflow: hidden;
+}
+
+.card-header {
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.card-header:hover {
+  background: #fafaf8;
+}
+
+.card-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.card-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a3e;
+}
+
+/* ── Skill description ── */
+.card-desc {
+  font-size: 0.82rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* ── Thin progress bar under description ── */
+.skill-progress-bar {
+  height: 3px;
+  background: #ebebeb;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.skill-progress-fill {
+  height: 3px;
+  background: #4a3ec8;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+/* ── Chevrons ── */
+.chevron {
+  font-size: 0.9rem;
+  color: #bbb;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+/* ── Card body ── */
+.card-body {
+  border-top: 1px solid #f0f0ea;
+}
+
+/* ── Level block ── */
+.level-block {
+  border-bottom: 1px solid #f0f0ea;
+}
+
+.level-block:last-child {
+  border-bottom: none;
+}
+
+/* ── Level header (collapsible) ── */
+.level-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 1.25rem;
+  cursor: pointer;
+  user-select: none;
+  gap: 10px;
+}
+
+.level-header:hover {
+  background: #fafaf8;
+}
+
+.level-header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.level-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: #ede8ff;
+  color: #3a2fa8;
+  padding: 2px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* ── Level completion text ── */
+.level-complete {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #1a7a3e;
+}
+
+.level-chevron {
+  font-size: 0.85rem;
+  color: #ccc;
+  flex-shrink: 0;
+}
+
+/* ── Level body ── */
+.level-body {
+  padding: 0.5rem 1.25rem 0.85rem 1.25rem;
+}
+
+/* ── Requirement row ── */
+.req-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.req-row:hover .req-text {
+  color: #1a1a1a;
+}
+
+/* ── Checkbox ── */
+.checkbox {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 2px solid #d0d0d0;
+  background: white;
+  flex-shrink: 0;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.checkbox.checked {
+  background: #4a3ec8;
+  border-color: #4a3ec8;
+}
+
+.checkmark {
+  width: 10px;
+  height: 7px;
+  display: none;
+}
+
+.checkbox.checked .checkmark {
+  display: block;
+}
+
+/* ── Requirement number ── */
+.req-num {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #4a3ec8;
+  flex-shrink: 0;
+  min-width: 28px;
+  margin-top: 3px;
+}
+
+/* ── Requirement text ── */
+.req-text {
+  font-size: 0.88rem;
+  color: #444;
+  line-height: 1.55;
+  transition: color 0.15s;
+}
+
+.req-text.done {
+  color: #bbb;
+  text-decoration: line-through;
+}
+
+/* ── Reset button ── */
+.reset-wrap {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.reset-btn {
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-size: 0.82rem;
+  color: #999;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.reset-btn:hover {
+  border-color: #e05555;
+  color: #e05555;
+}
+
+/* ── Error message ── */
+.error-msg {
+  text-align: center;
+  color: #c44;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+/* ── Footer ── */
+footer {
+  background: white;
+  border-top: 1px solid #e8e8e0;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.75rem;
+  color: #aaa;
+  margin-top: 2rem;
+}
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+  header h1 { font-size: 1.3rem; }
+  .card-desc { font-size: 0.78rem; }
+  .level-complete { font-size: 0.72rem; }
+}
